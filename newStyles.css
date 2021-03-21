@@ -1,11 +1,31 @@
+body {
+    /* overflow: hidden; */
+    background-color: #e8e8e8;
+}
+.navStyle{
+    background-color: #f05454;
+}
+.topContainer{
+    margin-top: 15px;;
+}
 .menu{
-    padding-left: 20px;
-    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     display: inline-block;
     cursor: pointer;
+    border-radius: 20%;
+}
+.menu:hover{
+    animation: animationForHoveringIcon;
+    animation-duration: 0.5s;
+    box-shadow: 100px;
+    animation-fill-mode: forwards;
+    background-color: #222831c7;
 }
 .welcomeMessage{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-left: 20px;
     font-size: 130%;
     text-align: center;
@@ -14,56 +34,90 @@
 }
 .settingsIcon{
     display: inline-block;
-    padding-left: 72%;
+    padding-right: 5px;
+    padding-left: 4px;
+    margin-left: 72%;
     cursor: pointer;
+    border-radius: 20%;
+}
+.settingsIcon:hover{
+    animation: animationForHoveringIcon;
+    animation-duration: 0.5s;
+    box-shadow: 100px;
+    animation-fill-mode: forwards;
+    background-color: #222831c7;
 }
 .search{
-    margin-top: 100px;
+    margin-top: 50%;
+    padding-top: 10%;
+    display: table;
+    margin: 0 auto;
+    width: 50%;
 }
-.searchBar{
-    /* align-items: center; */
+/* .searchBar{
+    align-items: center;
     margin-left: 25%;
-    width: 40%;
+    width: 180%;
+} */
+.searchBar:hover{
+    animation: animationForSearchBar;
+    animation-duration: 0.40s;
+    box-shadow: 100px;
+    animation-fill-mode: forwards;
+    background-color: #222831c7;
+}
+@keyframes animationForSearchBar{
+    from{
+        background-color: #30475e52;
+        
+    }
+    to{
+        background-color: #2228318e;
+    }
 }
 .searchButton{
     display: inline-block;
     cursor: pointer;
-    width: 10%;
+    width: 40%;
 }
 .bookmarks{
-    padding-left: 15%;
-    padding-top: 4%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 90%;
 }
 .bookmarkElement{
-    padding: 15px;
+    padding: 1%;
     /* padding-right: 15px; */
     display: inline-block;
     /* box-shadow: 10px 10px; */
     /* border-radius: 100; */
+    border-radius: 15px;
+    /* background-color: #222831c7; */
+
 }
 .icon{
     height: 100px;
     width: 100px;
     border-radius: 15%;
+    /* background-color: rgb(43, 46, 46); */
     /* box-shadow: 2px 2px rgb(86, 35, 35); */
 
 }
-.icon:hover{
+.bookmarkElement:hover{
     animation: animationForHoveringIcon;
-    animation-duration: 0.5s;
+    animation-duration: 0.40s;
     box-shadow: 100px;
     animation-fill-mode: forwards;
+    background-color: #222831c7;
 }
+
+
 @keyframes animationForHoveringIcon{
     from{
-        height: 100px;
-        width: 100px;
-        box-shadow: 100px;
+        background-color: #30475e52;
     }
     to{
-        padding: 15px;
-        /* padding-right: 15px; */
-        display: inline-block;
-        box-shadow: 100px;
+        background-color: #222831c7;
     }
 }
