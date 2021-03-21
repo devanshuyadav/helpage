@@ -1,0 +1,69 @@
+.menu{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.welcomeMessage{
+    margin-top: 50px;
+    padding-left: 20px;
+    font-size: 130%;
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+    display: inline-block;
+}
+.settingsIcon{
+    display: inline-block;
+    padding-left: 72%;
+    cursor: pointer;
+}
+.search{
+    margin-top: 100px;
+}
+.searchBar{
+    /* align-items: center; */
+    margin-left: 25%;
+    width: 40%;
+}
+.searchButton{
+    display: inline-block;
+    cursor: pointer;
+    width: 10%;
+}
+.bookmarks{
+    padding-left: 15%;
+    padding-top: 4%;
+}
+.bookmarkElement{
+    padding: 15px;
+    /* padding-right: 15px; */
+    display: inline-block;
+    /* box-shadow: 10px 10px; */
+    /* border-radius: 100; */
+}
+.icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+    /* box-shadow: 2px 2px rgb(86, 35, 35); */
+
+}
+.icon:hover{
+    animation: animationForHoveringIcon;
+    animation-duration: 0.5s;
+    box-shadow: 100px;
+    animation-fill-mode: forwards;
+}
+@keyframes animationForHoveringIcon{
+    from{
+        height: 100px;
+        width: 100px;
+        box-shadow: 100px;
+    }
+    to{
+        padding: 15px;
+        /* padding-right: 15px; */
+        display: inline-block;
+        box-shadow: 100px;
+    }
+}
