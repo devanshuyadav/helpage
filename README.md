@@ -1,4 +1,4 @@
-# helpage-2.1
+# Helpage-2.1
 One-Stop solution for clumsy bookmarks. Helpage lets you organise your custom bookmarks and most visited sites onto a basic html5 webpage.
 ## User end
 We have planned the project in such a way that on the user-end you can add your own icons, websites, favourites and articles to read.
