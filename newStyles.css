@@ -10,9 +10,9 @@ body {
 }
 .menu{
     margin-left: 20px;
-    margin-bottom: 10px;
-    padding-right: 5px;
-    padding-left: 5px;
+    margin-bottom: 5px;
+    /* padding-right: 5px; */
+    /* padding-left: 5px; */
     display: inline-block;
     cursor: pointer;
     border-radius: 20%;
@@ -26,17 +26,17 @@ body {
 }
 .welcomeMessage{
     /* margin-top: 50px; */
-    padding-left: 20px;
+    margin-left: 20px;
     font-size: 130%;
     text-align: center;
     font-family: 'Changa', sans-serif;
     display: inline-block;
 }
 .settingsIcon{
+    /* padding-right: 5px; */
+    /* padding-left: 4px; */
+    margin-left: 75%;
     display: inline-block;
-    padding-right: 5px;
-    padding-left: 4px;
-    margin-left: 72%;
     cursor: pointer;
     border-radius: 20%;
 }
@@ -61,18 +61,18 @@ body {
 } */
 .searchBar:hover{
     animation: animationForSearchBar;
-    animation-duration: 0.40s;
+    animation-duration: 0.20s;
     box-shadow: 100px;
     animation-fill-mode: forwards;
     background-color: #222831c7;
 }
 @keyframes animationForSearchBar{
     from{
-        background-color: #30475e52;
+        background-color: #30475e00;
         
     }
     to{
-        background-color: #2228318e;
+        background-color: #22283148;
     }
 }
 .searchButton{
@@ -82,7 +82,7 @@ body {
 }
 .bookmarks{
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 50%;
     margin-top: 2%;
     width: 90%;
 }
