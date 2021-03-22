@@ -16,36 +16,45 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark navStyle">
-    <div>
-      <a href="#" class="navbar-brand"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/LPA/Donation/Kundan/HelpAge._CB432424764_.jpg" width="30px" height="30px" alt=""> Helpage</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="#" class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link active">Contact Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articles</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="https://infinite.education/expertise/Android_Developer_2021">Roadmap to Android</a></li>
-            <li><a class="dropdown-item" href="https://whimsical.com/competitive-programming-guide-M8Bvyog3sstD1MpzxbPP3C">Roadmap to Compititive Programming</a></li>
-            <li><a class="dropdown-item" href="https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9">Preparation journey for Google</a></li>
-          </ul>
-        </li>
+    <div class="container-fluid">
+      <div>
+        <a href="#" class="navbar-brand"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/LPA/Donation/Kundan/HelpAge._CB432424764_.jpg" width="30px" height="30px" alt=""> Helpage</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articles</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://infinite.education/expertise/Android_Developer_2021">Roadmap to Android</a></li>
+              <li><a class="dropdown-item" href="https://whimsical.com/competitive-programming-guide-M8Bvyog3sstD1MpzxbPP3C">Roadmap to Compititive Programming</a></li>
+              <li><a class="dropdown-item" href="https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9">Preparation journey for Google</a></li>
+            </ul>
+          </li>
+      </div>
     </div>
   </nav>
   <div class="topContainer">
-    <div class="menu"><i class="fas fa-th fa-1x"></i></div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill menu" viewBox="0 0 16 16">
+      <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+    </svg>
     <div class="welcomeMessage">Welcome "username"</div>
-    <div class="settingsIcon"><i class="fas fa-cog fa-1x"></i></div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill settingsIcon" viewBox="0 0 16 16">
+      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+    </svg>
   </div>
   <nav class="navbar navbar-light">
     <div class="container-fluid">
       <form class="d-flex search" action="http://www.google.com/search">
-        <input class="form-control me-2 searchBar" type="search" placeholder="Search with Google...." aria-label="Search" name=q id=q>
+        <input class="form-control me-2 searchBar" type="search" autofocus="autofocus" placeholder="Search with Google...." aria-label="Search" name = q id = q>
         <button class="btn btn-outline-success searchButton" type="submit">Google Search!</button>
       </form>
     </div>
