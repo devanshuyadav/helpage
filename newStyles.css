@@ -26,7 +26,7 @@ body {
 }
 .welcomeMessage{
     /* margin-top: 50px; */
-    padding-left: 20px;
+    margin-left: 20px;
     font-size: 130%;
     text-align: center;
     font-family: 'Changa', sans-serif;
@@ -61,18 +61,18 @@ body {
 } */
 .searchBar:hover{
     animation: animationForSearchBar;
-    animation-duration: 0.40s;
+    animation-duration: 0.20s;
     box-shadow: 100px;
     animation-fill-mode: forwards;
     background-color: #222831c7;
 }
 @keyframes animationForSearchBar{
     from{
-        background-color: #30475e52;
+        background-color: #30475e00;
         
     }
     to{
-        background-color: #2228318e;
+        background-color: #22283148;
     }
 }
 .searchButton{
@@ -82,7 +82,7 @@ body {
 }
 .bookmarks{
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 50%;
     margin-top: 2%;
     width: 90%;
 }
