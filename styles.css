@@ -81,10 +81,9 @@ body {
     width: 40%;
 }
 .bookmarks{
-    margin-left: 10%;
-    margin-right: 50%;
-    margin-top: 2%;
-    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 85%;
 }
 .bookmarkElement{
     padding: 1%;
