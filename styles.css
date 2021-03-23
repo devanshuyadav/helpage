@@ -48,9 +48,18 @@ body {
     animation-fill-mode: forwards;
     background-color: #222831c7;
 }
-.search{
-    margin-top: 50%;
+.weatherForecast{
+    /* display: inline-block; */
+    width: 48%;
+    margin: 0 auto;
     padding-top: 10%;
+    /* margin-left: 10%; */
+    /* margin-top: 5%; */
+    /* border-radius:15px; */
+}
+.search{
+    /* margin-top: 50%; */
+    /* padding-top: 10%; */
     display: table;
     margin: 0 auto;
     width: 50%;
@@ -127,11 +136,4 @@ body {
     to{
         background-color: #222831c7;
     }
-}
-.weatherForecast{
-    display: inline-block;
-    width: 30%;
-    margin-left: 10%;
-    margin-top: 5%;
-    border-radius:5px;
 }
