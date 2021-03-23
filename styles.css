@@ -1,6 +1,7 @@
 body {
     /* overflow: hidden; */
     background-color: #e8e8e8;
+    margin-bottom: 4%;
 }
 .navStyle{
     background-color: #00AF91;
@@ -47,9 +48,18 @@ body {
     animation-fill-mode: forwards;
     background-color: #222831c7;
 }
-.search{
-    margin-top: 50%;
+.weatherForecast{
+    /* display: inline-block; */
+    width: 48%;
+    margin: 0 auto;
     padding-top: 10%;
+    /* margin-left: 10%; */
+    /* margin-top: 5%; */
+    /* border-radius:15px; */
+}
+.search{
+    /* margin-top: 50%; */
+    /* padding-top: 10%; */
     display: table;
     margin: 0 auto;
     width: 50%;
@@ -80,24 +90,31 @@ body {
     cursor: pointer;
     width: 40%;
 }
-.bookmarks{
+.container{
+    margin-top: 3%;
+}
+/* .bookmarks{
     margin: 0 auto;
     margin-top: 3%;
     width: 85%;
-}
+} */
 .bookmarkElement{
-    padding: 1%;
+    /* padding: 1%; */
     /* padding-right: 15px; */
     display: inline-block;
     /* box-shadow: 10px 10px; */
     /* border-radius: 100; */
     border-radius: 15px;
     /* background-color: #222831c7; */
-
 }
 .icon{
-    height: 100px;
-    width: 100px;
+    /* height: 100px;
+    width: 100px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
     border-radius: 15%;
     /* background-color: rgb(43, 46, 46); */
     /* box-shadow: 2px 2px rgb(86, 35, 35); */
