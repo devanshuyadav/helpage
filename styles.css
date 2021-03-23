@@ -1,6 +1,7 @@
 body {
     /* overflow: hidden; */
     background-color: #e8e8e8;
+    margin-bottom: 4%;
 }
 .navStyle{
     background-color: #00AF91;
@@ -119,4 +120,11 @@ body {
     to{
         background-color: #222831c7;
     }
+}
+.weatherForecast{
+    display: inline-block;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius:5px;
 }
