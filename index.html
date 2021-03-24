@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/favicon.ico">
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script>
 </head>
 
 <body>
@@ -29,7 +32,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a href="#" class="nav-link active">Home</a>
           </li>
@@ -50,10 +53,24 @@
                   journey for Google</a></li>
             </ul>
           </li>
+          <li class="nav-item mode">
+            <button type="button" class="ml-auto btn btn-dark change" data-toggle="button" aria-pressed="false" autocomplete="off">Dark Mode!</button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+  <script>
+    $( ".change" ).on("click", function() {
+        if( $( "body" ).hasClass( "dark" )) {
+            $( "body" ).removeClass( "dark" );
+            $( ".change" ).text( "Dark Mode!" );
+        } else {
+            $( "body" ).addClass( "dark" );
+            $( ".change" ).text( "Light Mode!" );
+        }
+    });
+  </script>
   <div class="topContainer">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       class="bi bi-grid-3x3-gap-fill menu" viewBox="0 0 16 16">
@@ -102,7 +119,7 @@
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
         <div class="bookmarkElement"><a href="https://vtop.vitbhopal.ac.in/vtop/initialProcess" target="_blank"><img
               src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png"
-              color=white alt="VTOP" height="100" width="100" class="icon"></a></div>
+              color=white alt="VTOP" height="100" width="100" class="icon" style="background-color: #e8e8e8;"></a></div>
       </div>
       <div class=" col-4 col-sm-4 col-4 col-lg-2 col-md-3">
         <div class="bookmarkElement"><a href="https://classroom.google.com/u/1/h" target="_blank"><img
@@ -203,6 +220,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
