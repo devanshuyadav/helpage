@@ -2,7 +2,19 @@ body {
     background-color: #e8e8e8;
     margin-bottom: 4%;
 }
-
+.dark{
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+.change{
+    cursor: pointer;
+}
+.funky{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0;
+    /* margin-top: auto; */
+}
 .navStyle {
     background-color: #00AF91;
 }
