@@ -7,4 +7,4 @@ A less tedious approach could be that you can set helpage as your browser's defa
 A search bar has also been provided after personally using helpage 1.0 for months.
 
 ### Note:
-the project is under-construction. Some of the functionalities might be unavailable/ won't work.
+The project is under-construction. Some of the functionalities might be unavailable/ won't work.
