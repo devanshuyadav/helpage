@@ -23,49 +23,26 @@ body {
   background-color: #00af91;
 }
 
-.topContainer {
-  margin-top: 15px;
+.container-styles{
+  margin: 0.5% auto;
+  /* margin-right:0; */
 }
-
-.menu {
-  margin-left: 20px;
-  margin-bottom: 5px;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 20%;
-}
-
-.menu:hover {
-  animation: animationForHoveringIcon;
-  animation-duration: 0.5s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  background-color: #222831c7;
-}
-
-.welcomeMessage {
-  margin-left: 20px;
-  font-size: 130%;
+.container-content-styles{
   text-align: center;
-  font-family: "Changa", sans-serif;
-  display: inline-block;
+  font-size: 20px;
 }
-
-.settingsIcon {
-  margin-left: 75%;
-  display: inline-block;
+.fa{
+  margin: 4% auto;
+  font-size: 25px;
   cursor: pointer;
-  border-radius: 20%;
 }
-
-.settingsIcon:hover {
-  animation: animationForHoveringIcon;
-  animation-duration: 0.5s;
+.fa:hover{
+  animation: animationForSearchBar;
+  animation-duration: 0.2s;
   box-shadow: 100px;
   animation-fill-mode: forwards;
-  background-color: #222831c7;
+  border-radius: 4px;
 }
-
 .weatherForecast {
   width: 48%;
   margin: 0 auto;
@@ -102,9 +79,9 @@ body {
   width: 40%;
 }
 
-.container {
+/* .container {
   margin-top: 3%;
-}
+} */
 
 .bookmarkElement {
   display: inline-block;
