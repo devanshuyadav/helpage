@@ -1,139 +1,145 @@
 body {
-    background-color: #e8e8e8;
-    margin-bottom: 4%;
+  background-color: #e8e8e8;
+  margin-bottom: 4%;
 }
-.dark{
-    background-color: #3a3a3a;
-    color: #ffffff;
+
+.dark {
+  background-color: #3a3a3a;
+  color: #ffffff;
 }
-.change{
-    cursor: pointer;
+
+.change {
+  cursor: pointer;
 }
-.funky{
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 0;
-    /* margin-top: auto; */
+
+.funky {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 0;
+  /* margin-top: auto; */
 }
+
 .navStyle {
-    background-color: #00AF91;
+  background-color: #00af91;
 }
 
 .topContainer {
-    margin-top: 15px;
-    ;
+  margin-top: 15px;
 }
 
 .menu {
-    margin-left: 20px;
-    margin-bottom: 5px;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 20%;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20%;
 }
 
 .menu:hover {
-    animation: animationForHoveringIcon;
-    animation-duration: 0.5s;
-    box-shadow: 100px;
-    animation-fill-mode: forwards;
-    background-color: #222831c7;
+  animation: animationForHoveringIcon;
+  animation-duration: 0.5s;
+  box-shadow: 100px;
+  animation-fill-mode: forwards;
+  background-color: #222831c7;
 }
 
 .welcomeMessage {
-    margin-left: 20px;
-    font-size: 130%;
-    text-align: center;
-    font-family: 'Changa', sans-serif;
-    display: inline-block;
+  margin-left: 20px;
+  font-size: 130%;
+  text-align: center;
+  font-family: "Changa", sans-serif;
+  display: inline-block;
 }
 
 .settingsIcon {
-    margin-left: 75%;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 20%;
+  margin-left: 75%;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20%;
 }
 
 .settingsIcon:hover {
-    animation: animationForHoveringIcon;
-    animation-duration: 0.5s;
-    box-shadow: 100px;
-    animation-fill-mode: forwards;
-    background-color: #222831c7;
+  animation: animationForHoveringIcon;
+  animation-duration: 0.5s;
+  box-shadow: 100px;
+  animation-fill-mode: forwards;
+  background-color: #222831c7;
 }
 
 .weatherForecast {
-    width: 48%;
-    margin: 0 auto;
-    padding-top: 10%;
+  width: 48%;
+  margin: 0 auto;
+  /* padding-top: 50px; */
 }
 
 .search {
-    display: table;
-    margin: 0 auto;
-    width: 50%;
+  display: table;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .searchBar:hover {
-    animation: animationForSearchBar;
-    animation-duration: 0.20s;
-    box-shadow: 100px;
-    animation-fill-mode: forwards;
-    background-color: #222831c7;
+  animation: animationForSearchBar;
+  animation-duration: 0.2s;
+  box-shadow: 100px;
+  animation-fill-mode: forwards;
+  background-color: #222831c7;
 }
 
 @keyframes animationForSearchBar {
-    from {
-        background-color: #30475e00;
+  from {
+    background-color: #30475e00;
+  }
 
-    }
-
-    to {
-        background-color: #22283148;
-    }
+  to {
+    background-color: #22283148;
+  }
 }
 
 .searchButton {
-    display: inline-block;
-    cursor: pointer;
-    width: 40%;
+  display: inline-block;
+  cursor: pointer;
+  width: 40%;
 }
 
 .container {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
 .bookmarkElement {
-    display: inline-block;
-    border-radius: 15px;
+  display: inline-block;
+  border-radius: 15px;
 }
 
 .icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 60%;
-    border-radius: 15%;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
+  border-radius: 15%;
 }
 
 .bookmarkElement:hover {
-    animation: animationForHoveringIcon;
-    animation-duration: 0.40s;
-    box-shadow: 100px;
-    animation-fill-mode: forwards;
-    background-color: #222831c7;
+  animation: animationForHoveringIcon;
+  animation-duration: 0.4s;
+  box-shadow: 100px;
+  animation-fill-mode: forwards;
+  background-color: #222831c7;
 }
 
-
 @keyframes animationForHoveringIcon {
-    from {
-        background-color: #30475e52;
-    }
+  from {
+    background-color: #30475e52;
+  }
 
-    to {
-        background-color: #222831c7;
-    }
+  to {
+    background-color: #222831c7;
+  }
+}
+
+/* this has been causing misalignments */
+.col-4 {
+  text-align: center;
+  margin: auto;
 }
