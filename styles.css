@@ -1,8 +1,15 @@
 body {
+  /* background-image: linear-gradient(120deg, #feb78c, #e5678f); */
   background-color: #faf9f9;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
-
+#helpage{
+  font-family: "Montserrat", serif;
+  font-size:2rem;
+}
 .dark {
   background-color: #1e2228;
   color: #ffffff;
@@ -12,12 +19,7 @@ body {
   cursor: pointer;
 }
 
-.funky {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 0;
-  /* margin-top: auto; */
-}
+/* Navbar  */
 
 .navbar a {
   color: #ffffff;
@@ -28,8 +30,7 @@ body {
 }
 
 .navbar-brand {
-  padding: 10px;
-  font-family: "montserrat", sans-serif;
+  padding: 15px;
   font-size: 20px;
 }
 
@@ -38,39 +39,35 @@ body {
   margin: auto;
 }
 
-.navStyle {
-  background-color: #488b8f;
-}
-
-.mode {
+.dark-mode-toggle-button {
   padding: 10px;
 }
 
-#center-toggle {
-  background-color: transparent;
-  border: 2px solid black;
+#responsive-navbar-toggle {
+  border: 2px solid #fff;
+  align-content: center;
+  /* background-image: linear-gradient(120deg, #feb78c, #e5678f); */
 }
-
-.navbar-toggler-icon {
-  display: inline;
-}
+/* container */
 
 .container-styles {
   margin: 0.5% auto;
-  /* margin-right:0; */
 }
 
 .container-content-styles {
   text-align: center;
   font-size: 3rem;
-  font-family: "Great Vibes", cursive;
+  font-family: "Montserrat", serif;
   background-color: #488b8f;
   color: #ffffff;
 }
 
-.darkhead {
-  /* won't work if placed anywhere above this line */
+.dark-nav {
   background-color: #2d333b;
+  color: #ffffff;
+}
+.light-nav {
+  background-color: #488b8f;
   color: #ffffff;
 }
 
@@ -187,7 +184,7 @@ body {
 }
 
 img {
-  margin: 10px;
+  margin: 9px;
 }
 
 img:hover {
@@ -195,4 +192,23 @@ img:hover {
   transition: 0.1s ease-in-out;
   transform: scale(1.3, 1.3);
   transition: all 0.1s ease-in-out;
+}
+
+/* footer */
+.footer {
+  margin-top: 80px;
+  padding: 50px;
+  /* font-size: 1.5rem; */
+  /* font-family: "Great Vibes", cursive; */
+  font-weight: 100;
+}
+
+.dark-footer {
+  background-color: #2d333b;
+  color: #ffffff;
+}
+
+.light-footer {
+  background-color: #488b8f;
+  color: #ffffff;
 }

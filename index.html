@@ -39,14 +39,15 @@
 </head>
 
 <body class="dark">
-  <nav class="navbar navbar-expand-lg navStyle darknav darkhead .change ">
+  <nav class="navbar navbar-expand-lg topnav dark-nav .change ">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand "><i class="fas fa-home"></i> Helpage</a>
+      <a href="index.html" class="navbar-brand" id="helpage">🏡 Helpage</a>
 
-      <button id="center-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      <button id="responsive-navbar-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"
+            style="color:#fff; font-size:30px;margin:auto 0;"></i></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,64 +74,34 @@
             </div>
           </div>
 
-          <div class="nav-item"><a href="#" class="nav-link active">About Us</a></div>
+          <!-- <div class="nav-item"><a href="README.md" class="nav-link active">About</a></div> -->
 
           <div class="nav-item"><a href="https://github.com/devanshuyadav/helpage-2.1" class="nav-link active">
-              <i class="fab fa-github fa-2x"></i></a>
+              <i class="fab fa-github" style="font-size:20px"></i> GitHub</a>
+          </div>
+
+          <!-- dark mode toggle -->
+          <div class="dark-mode-toggle-button">
+            <button type="button" class="btn btn-light change" data-toggle="button" aria-pressed="false"
+              autocomplete="off">🌞</button>
           </div>
 
         </div>
       </div>
 
-      <!-- dark mode toggle -->
-      <div class="mode">
-        <button type="button" class="btn btn-light change" data-toggle="button" aria-pressed="false"
-          autocomplete="off">🌞</button>
-      </div>
+
 
   </nav>
 
   <!-- heading -->
   <div class="row">
-    <div class="col-12 container-content-styles darkhead .change">
+    <div class="col-12 container-content-styles topnav dark-nav .change">
       Welcome, Devanshu
     </div>
   </div>
 
   <!-- js -->
-  <script>
-    // for dark mode toggle
-    $(".change").on("click", function () {
-      if ($("body").hasClass("dark")) {
-        $("body").removeClass("dark");
-        // for Toggle Button
-        $(".btn").removeClass("btn-light");
-        $(".btn").addClass("btn-dark");
-        $(".change").text("🌛");
-        // for navbar
-        $(".darknav").removeClass("darkhead");
-        // for welcome bar
-        $(".container-content-styles").removeClass("darkhead");
-        // for icons
-        $(".bookmarkElement").removeClass("dark-icon");
-        $(".bookmarkElement").addClass("light-icon");
-      }
-      else {
-        $("body").addClass("dark");
-        // for Toggle Button
-        $(".change").text("🌞");
-        $(".btn").removeClass("btn-dark");
-        $(".btn").addClass("btn-light");
-        // for navbar
-        $(".darknav").addClass("darkhead");
-        // for welcome bar
-        $(".container-content-styles").addClass("darkhead");
-        // for icons
-        $(".bookmarkElement").removeClass("light-icon");
-        $(".bookmarkElement").addClass("dark-icon");
-      }
-    });
-  </script>
+
 
   <!-- Weather Embed -->
   <!-- <div class="row">
@@ -160,7 +131,7 @@
       <form class="d-flex search" action="https://www.google.com/search">
         <input class="form-control me-2 searchBar" type="search" autofocus="autofocus"
           placeholder="Powered by Google..." aria-label="Search" name=q id=q>
-        <button class="btn btn-outline btn-light searchButton" type="submit">Search</button>
+        <button class="btn btn-outline btn-light searchButton" type="submit">🔍</button>
       </form>
     </div>
   </nav>
@@ -393,7 +364,47 @@
       <!-- end of icons bar -->
     </div>
   </div>
+  <div class="footer dark-footer">
+    © 2021 Devanshu Yadav.
 
+  </div>
+  <script>
+    // for dark mode toggle
+    $(".change").on("click", function () {
+      if ($("body").hasClass("dark")) {
+        $("body").removeClass("dark");
+        // for Toggle Button
+        $(".btn").removeClass("btn-light");
+        $(".btn").addClass("btn-dark");
+        $(".change").text("🌛");
+        // for navbar & welcome line
+        $(".topnav").removeClass("dark-nav");
+        $(".topnav").addClass("light-nav");
+        // for icons
+        $(".bookmarkElement").removeClass("dark-icon");
+        $(".bookmarkElement").addClass("light-icon");
+        // footer
+        $(".footer").removeClass("dark-footer");
+        $(".footer").addClass("light-footer");
+      }
+      else {
+        $("body").addClass("dark");
+        // for Toggle Button
+        $(".change").text("🌞");
+        $(".btn").removeClass("btn-dark");
+        $(".btn").addClass("btn-light");
+        // for navbar & welcome line
+        $(".topnav").removeClass("light-nav");
+        $(".topnav").addClass("dark-nav");
+        // for icons
+        $(".bookmarkElement").removeClass("light-icon");
+        $(".bookmarkElement").addClass("dark-icon");
+        // footer
+        $(".footer").removeClass("light-footer");
+        $(".footer").addClass("dark-footer");
+      }
+    });
+  </script>
 </body>
 
 </html>
