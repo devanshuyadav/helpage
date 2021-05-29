@@ -1,29 +1,41 @@
 body {
-  /* background-image: linear-gradient(120deg, #feb78c, #e5678f); */
-  background-color: #faf9f9;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-}
-#helpage{
-  font-family: "Montserrat", serif;
-  font-size:2rem;
-}
-.dark {
-  background-color: #1e2228;
-  color: #ffffff;
+  font-size: 1.2rem;
 }
 
-.change {
-  cursor: pointer;
+#helpage {
+  font-size: 1.7rem;
+}
+
+.light,
+.light.navbar a {
+  background-color: #ececec;
+  color: #000;
+}
+.dark,
+.dark.navbar a {
+  background-color: #1f2329;
+  color: #fff;
+}
+
+.light-elem {
+  background-color: #ececec;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6),
+    10px 10px 15px rgba(70, 70, 70, 0.1);
+}
+
+.dark-elem {
+  background: #1f2329;
+  box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
+}
+
+.container-fluid {
+  padding: 0 30px;
 }
 
 /* Navbar  */
-
-.navbar a {
-  color: #ffffff;
-}
 
 .navbar-nav {
   margin-left: auto;
@@ -39,176 +51,79 @@ body {
   margin: auto;
 }
 
-.dark-mode-toggle-button {
+#dark-mode-toggle {
+  display: inline-block;
   padding: 10px;
 }
 
-#responsive-navbar-toggle {
-  border: 2px solid #fff;
-  align-content: center;
-  /* background-image: linear-gradient(120deg, #feb78c, #e5678f); */
-}
-/* container */
-
-.container-styles {
-  margin: 0.5% auto;
+#dark-mode-toggle-button {
+  display: inline-block;
 }
 
-.container-content-styles {
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Montserrat", serif;
-  background-color: #488b8f;
-  color: #ffffff;
+#salutation {
+  font-size: 2rem;
 }
 
-.dark-nav {
-  background-color: #2d333b;
-  color: #ffffff;
+/* dropdown */
+
+.dropdown-menu.light a {
+  color: rgb(175, 175, 175);
 }
-.light-nav {
-  background-color: #488b8f;
-  color: #ffffff;
+.dropdown-menu.dark a {
+  color: rgb(104, 104, 104);
 }
 
-.dropdown-item {
-  right: 0;
-}
-
-.dropdown-menu a {
-  color: #888888;
-}
-
-.dropdown-menu a:hover {
+.dropdown-menu.light a:hover {
   color: #000;
+}
+.dropdown-menu.dark a:hover {
+  color: #fff;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+  display: block; /* for dropdown on hover */
+  right: 1px;
 }
 
-.fa {
-  margin: 4% auto;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.fa:hover {
-  animation: animationForSearchBar;
-  animation-duration: 0.2s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  border-radius: 4px;
-}
-
-.weatherForecast {
-  width: 48%;
-  margin: 0 auto;
-  /* padding-top: 50px; */
-}
-
+/* searchBar */
 .search {
   display: table;
-  margin: 0 auto;
-  width: 50%;
+  margin: 30px auto;
+  width: 45%;
 }
 
-.searchBar:hover {
-  animation: animationForSearchBar;
-  animation-duration: 0.2s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  background-color: #222831c7;
-}
-
-@keyframes animationForSearchBar {
-  from {
-    background-color: #30475e00;
-  }
-
-  to {
-    background-color: #22283148;
-  }
+.searchBar {
+  border: none;
 }
 
 .searchButton {
   display: inline-block;
   cursor: pointer;
-  width: 40%;
+  width: 15%;
+  border: none;
 }
 
-.bookmarkElement {
+/* icons */
+.icons {
   display: inline-block;
-  margin: 10px;
+  margin: 15px;
   border-radius: 50%;
 }
 
-.light-icon {
-  background-color: #dce4e6;
-}
-
-.dark-icon {
-  background-color: #2d333b;
-}
-
-.icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 60%;
-  border-radius: 15%;
-}
-
-/* .bookmarkElement:hover {
-  animation: animationForHoveringIcon;
-  animation-duration: 0.4s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  background-color: #0066ffc7;
-} */
-/* @keyframes animationForHoveringIcon {
-  from {
-    background-color: #30475e52;
-  }
-
-  to {
-    background-color: #222831c7;
-  }
-} */
-/* this has been causing misalignments */
-.col-4 {
-  text-align: center;
-  margin: auto;
-}
-
 img {
-  margin: 9px;
+  margin: 10px;
 }
 
 img:hover {
   cursor: pointer;
   transition: 0.1s ease-in-out;
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   transition: all 0.1s ease-in-out;
 }
 
 /* footer */
 .footer {
-  margin-top: 80px;
-  padding: 50px;
-  /* font-size: 1.5rem; */
-  /* font-family: "Great Vibes", cursive; */
+  margin: 40px 0 80px;
+  padding: 10px;
   font-weight: 100;
-}
-
-.dark-footer {
-  background-color: #2d333b;
-  color: #ffffff;
-}
-
-.light-footer {
-  background-color: #488b8f;
-  color: #ffffff;
 }

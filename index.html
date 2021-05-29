@@ -20,11 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <!--  Google Fonts  -->
-  <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
 
   <!--  StyleSheet  -->
   <link rel="stylesheet" href="styles.css">
@@ -34,30 +31,32 @@
   <link rel="icon" href="images/home.ico" type="image/x-icon">
 
   <!--  Bootstrap JS  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 
-<body class="dark">
-  <nav class="navbar navbar-expand-lg topnav dark-nav .change ">
+<body class="light-dark dark">
+  <nav class="navbar navbar-expand-lg dark light-dark ">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand" id="helpage">🏡 Helpage</a>
+      <a href="index.html" class="navbar-brand" id="helpage">Helpage</a>
 
-      <button id="responsive-navbar-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"
-            style="color:#fff; font-size:30px;margin:auto 0;"></i></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color:#fff; font-size:30px; margin:auto 0;"></i>
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <div class="navbar-nav ml-auto">
+        <div class="navbar-nav mr-auto">
 
           <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+            <div class="dropdown-menu light-dark dark" aria-labelledby="navbarDropdownMenuLink">
+
               <a href="https://hackdsc.tech/#home" class="dropdown-item">HACKDSC'21</a>
               <a href="https://mizanxali.github.io/GWL-elecTRON/" class="dropdown-item">GWL-elecTRON</a>
               <a class="dropdown-item" href="https://infinite.education/expertise/Android_Developer_2021">Roadmap to
@@ -71,67 +70,41 @@
               <a href="https://cssbattle.dev/" class="dropdown-item">CSS Battle</a>
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">All Bookmarks</a>
+
             </div>
+
           </div>
 
           <!-- <div class="nav-item"><a href="README.md" class="nav-link active">About</a></div> -->
 
-          <div class="nav-item"><a href="https://github.com/devanshuyadav/helpage-2.1" class="nav-link active">
-              <i class="fab fa-github" style="font-size:20px"></i> GitHub</a>
+          <div class="nav-item">
+            <a href="https://github.com/devanshuyadav/helpage-2.1" class="nav-link">GitHub</a>
           </div>
 
           <!-- dark mode toggle -->
-          <div class="dark-mode-toggle-button">
-            <button type="button" class="btn btn-light change" data-toggle="button" aria-pressed="false"
-              autocomplete="off">🌞</button>
+          <div id="dark-mode-toggle">
+            <div type="button" id="dark-mode-toggle-button" data-toggle="button" aria-pressed="false"
+              autocomplete="off">🌞</div>
           </div>
 
         </div>
       </div>
-
-
-
   </nav>
 
   <!-- heading -->
   <div class="row">
-    <div class="col-12 container-content-styles topnav dark-nav .change">
+    <div id="salutation" class="col-12 light-dark dark">
       Welcome, Devanshu
     </div>
   </div>
-
-  <!-- js -->
-
-
-  <!-- Weather Embed -->
-  <!-- <div class="row">
-    <div class="col-12">
-      <div class="weatherForecast">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/20d5978d96/india/" data-label_1="INDIA"
-          data-label_2="WEATHER" data-mode="Current" data-days="3" data-theme="original" data-basecolor="#00AF91">INDIA
-          WEATHER</a>
-        <script>
-          ! function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (!d.getElementById(id)) {
-              js = d.createElement(s);
-              js.id = id;
-              js.src = 'https://weatherwidget.io/js/widget.min.js';
-              fjs.parentNode.insertBefore(js, fjs);
-            }
-          }(document, 'script', 'weatherwidget-io-js');
-        </script>
-      </div>
-    </div>
-  </div> -->
 
   <!-- search bar -->
   <nav class="navbar">
     <div class="container-fluid">
       <form class="d-flex search" action="https://www.google.com/search">
-        <input class="form-control me-2 searchBar" type="search" autofocus="autofocus"
+        <input class="form-control me-2 searchBar dark-elem" type="search" autofocus="autofocus"
           placeholder="Powered by Google..." aria-label="Search" name=q id=q>
-        <button class="btn btn-outline btn-light searchButton" type="submit">🔍</button>
+        <button class="btn btn-outline btn-dark searchButton dark-elem" type="submit">🔍</button>
       </form>
     </div>
   </nav>
@@ -144,8 +117,8 @@
       <!-- VTOP -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://vtop.vitbhopal.ac.in/vtop/initialProcess" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://vtop.vitbhopal.ac.in/vtop/initialProcess">
             <img src="assets/VIT.svg" alt="VIT" height="100px">
           </a>
         </div>
@@ -154,8 +127,8 @@
       <!-- Google Classroom -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://classroom.google.com/u/1/h" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://classroom.google.com/u/1/h">
             <img src="assets/google-classroom.svg" alt="GoogleClassroom" height="100px">
           </a>
         </div>
@@ -164,8 +137,8 @@
       <!-- LinkedIn -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon ">
-          <a href="https://www.linkedin.com/feed/" target="_blank">
+        <div class="icons dark-elem ">
+          <a href="https://www.linkedin.com/feed/">
             <img src="assets/linkedin.svg" alt="linkedin" height="100px">
           </a>
         </div>
@@ -174,8 +147,8 @@
       <!-- GitHub -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon ">
-          <a href="https://github.com/" target="_blank">
+        <div class="icons dark-elem ">
+          <a href="https://github.com/">
             <img src="assets/github.svg" alt="github" height="100px">
           </a>
         </div>
@@ -184,8 +157,8 @@
       <!-- drive -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://drive.google.com/drive/my-drive" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://drive.google.com/drive/my-drive">
             <img src="assets/drive.svg" alt="drive" height="100px">
           </a>
         </div>
@@ -194,8 +167,8 @@
       <!-- google calendar -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://calendar.google.com/calendar/u/0/r/week">
             <img src="assets/calendar.svg" alt="calendar" height="100">
           </a>
         </div>
@@ -204,8 +177,8 @@
       <!-- trello -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://replit.com/~" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://replit.com/~">
             <img src="assets/replit.svg" alt="Replit" height="100px">
           </a>
         </div>
@@ -214,8 +187,8 @@
       <!-- codechef -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.codechef.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.codechef.com/">
             <img src="assets/codechef.svg" alt="codechef" height="100px">
           </a>
         </div>
@@ -224,8 +197,8 @@
       <!-- Codeforces -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://codeforces.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://codeforces.com/">
             <img src="assets/Codeforces.svg" alt="codeforces" height="100">
           </a>
         </div>
@@ -234,8 +207,8 @@
       <!-- hackerrank -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.hackerrank.com/dashboard" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.hackerrank.com/dashboard">
             <img src="assets/hackerrank.svg" alt="hackerrank" height="100">
           </a>
         </div>
@@ -244,8 +217,8 @@
       <!-- kaggle -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.kaggle.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.kaggle.com/">
             <img src="assets/kaggle.svg" alt="kaggle" height="100">
           </a>
         </div>
@@ -254,8 +227,8 @@
       <!-- LeetCode -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://leetcode.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://leetcode.com/">
             <img src="assets/leetCode.svg" alt="LeetCode" height="100">
           </a>
         </div>
@@ -264,8 +237,8 @@
       <!-- codepen.io -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://codepen.io/pen/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://codepen.io/pen/">
             <img src="assets/codepen.svg" alt="codepen" height="100">
           </a>
         </div>
@@ -274,8 +247,8 @@
       <!-- Udemy -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.udemy.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.udemy.com/">
             <img src="assets/udemy.svg" alt="Udemy" height="100">
           </a>
         </div>
@@ -284,8 +257,8 @@
       <!-- coursera -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.coursera.org/in" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.coursera.org/in">
             <img src="assets/coursera.svg" alt="coursera" height="100">
           </a>
         </div>
@@ -294,8 +267,8 @@
       <!-- trello -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://trello.com/b/NOBWQe1g/codechef-graphic-designers" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://trello.com/b/NOBWQe1g/codechef-graphic-designers">
             <img src="assets/trello.svg" alt="trello" height="100px">
           </a>
         </div>
@@ -304,8 +277,8 @@
       <!-- personal gmail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://mail.google.com/mail/u/0/#inbox">
             <img src="assets/gmailpersonal.svg" alt="gmailpersonal" height="100px">
           </a>
         </div>
@@ -314,8 +287,8 @@
       <!-- college mail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://mail.google.com/mail/u/1/#inbox">
             <img src="assets/gmailcollege.svg" alt="gmailcollege" height="100px">
           </a>
         </div>
@@ -324,8 +297,8 @@
       <!-- Chess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.chess.com/home" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.chess.com/home">
             <img src="assets/chess.svg" alt="chess" height="100">
           </a>
         </div>
@@ -334,8 +307,8 @@
       <!-- lichess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://lichess.org/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://lichess.org/">
             <img src="assets/lichess.svg" alt="lichess" height="100">
           </a>
         </div>
@@ -344,8 +317,8 @@
       <!-- medium -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://medium.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://medium.com/">
             <img src="assets/medium.svg" alt="medium" height="100px">
           </a>
         </div>
@@ -354,8 +327,8 @@
       <!-- unsplash -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://unsplash.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://unsplash.com/">
             <img src="assets/unsplash.svg" alt="unsplash" height="100px">
           </a>
         </div>
@@ -364,8 +337,8 @@
       <!-- youtube -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.youtube.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.youtube.com/">
             <img src="assets/youtube.svg" alt="youtube" height="100px">
           </a>
         </div>
@@ -374,8 +347,8 @@
       <!-- instagram -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="bookmarkElement dark-icon">
-          <a href="https://www.instagram.com/" target="_blank">
+        <div class="icons dark-elem">
+          <a href="https://www.instagram.com/">
             <img src="assets/instagram.svg" alt="instagram" height="100px">
           </a>
         </div>
@@ -384,44 +357,37 @@
       <!-- end of icons bar -->
     </div>
   </div>
-  <div class="footer dark-footer">
-    © 2021 Devanshu Yadav.
-
+  <div class="footer">
+    © 2021 | Helpage | Devanshu Yadav
   </div>
   <script>
     // for dark mode toggle
-    $(".change").on("click", function () {
+    $("#dark-mode-toggle-button").on("click", function () {
       if ($("body").hasClass("dark")) {
-        $("body").removeClass("dark");
         // for Toggle Button
-        $(".btn").removeClass("btn-light");
-        $(".btn").addClass("btn-dark");
-        $(".change").text("🌛");
-        // for navbar & welcome line
-        $(".topnav").removeClass("dark-nav");
-        $(".topnav").addClass("light-nav");
+        $("#dark-mode-toggle-button").text("🌝");
+        // for body, salutation, dropdown & navbar
+        $(".light-dark").removeClass("dark");
+        $(".light-dark").addClass("light");
         // for icons
-        $(".bookmarkElement").removeClass("dark-icon");
-        $(".bookmarkElement").addClass("light-icon");
-        // footer
-        $(".footer").removeClass("dark-footer");
-        $(".footer").addClass("light-footer");
+        $(".icons").removeClass("dark-elem");
+        $(".icons").addClass("light-elem");
+        // for search bar and button
+        $(".searchBar, .searchButton").removeClass("dark-elem");
+        $(".searchBar, .searchButton").addClass("light-elem");
       }
       else {
-        $("body").addClass("dark");
         // for Toggle Button
-        $(".change").text("🌞");
-        $(".btn").removeClass("btn-dark");
-        $(".btn").addClass("btn-light");
-        // for navbar & welcome line
-        $(".topnav").removeClass("light-nav");
-        $(".topnav").addClass("dark-nav");
+        $("#dark-mode-toggle-button").text("🌞");
+        // for for body, salutation, dropdown & navbar
+        $(".light-dark").removeClass("light");
+        $(".light-dark").addClass("dark");
         // for icons
-        $(".bookmarkElement").removeClass("light-icon");
-        $(".bookmarkElement").addClass("dark-icon");
-        // footer
-        $(".footer").removeClass("light-footer");
-        $(".footer").addClass("dark-footer");
+        $(".icons").removeClass("light-elem");
+        $(".icons").addClass("dark-elem");
+        // for search bar and button
+        $(".searchBar, .searchButton").removeClass("light-elem");
+        $(".searchBar, .searchButton").addClass("dark-elem");
       }
     });
   </script>
