@@ -8,3 +8,28 @@ A search bar has also been provided after personally using helpage 1.0 for month
 
 ### Note:
 The project is under-construction. Some of the functionalities might be unavailable/ won't work.
+
+
+## **How to use Helpage?** *(Efficiently!!)*
+1. Copy the link ```https://devanshuyadav.github.io/Helpage/```
+2. Set this as your browser/s startup page.
+3. You're Good to Go. 
+
+Now everytime you open your browser, you'll have all your selected websites at one place.
+<br/><br/>
+*Chrome:*
+![Chrome-Helpage](/images/helpageChrome.png)
+*Brave:*
+![Brave-Helpage](/images/helpageBrave.png)
+<br/>
+*Safari:*
+![Safari-Helpage](/images/helpageSafari.png)
+<br>
+<br/>
+
+---
+<br/>
+
+## **How to Personalize Helpage?**
+1. [Fork]() the Repository.
+2. Clone the Repository to your Local Environment.
