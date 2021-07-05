@@ -25,6 +25,7 @@
 
   <!--  StyleSheet  -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="article.css">
 
   <!--  Favicon  -->
   <link rel="shortcut icon" href="images/green-favicon.ico" type="image/x-icon">
@@ -32,6 +33,8 @@
 
   <!--  Bootstrap JS  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
 
 </head>
 
@@ -357,6 +360,55 @@
       <!-- end of icons bar -->
     </div>
   </div>
+
+<!-- reading list -->
+<div class="reading-list">
+  <div class="domains">
+  <h2 class="domain-list-title">Domains</h2>
+   <ul class="domain-list" data-domains>
+     <!-- <li>a</li>
+     <li>b</li>
+     <li>c</li> -->
+   </ul>
+   <form action="#" data-domain-form>
+     <input type="text" class="new domain" placeholder="New Domain" data-domain-input>
+     <button class="btnOfReadingList">+</button>
+   </form>
+  </div>
+  
+  
+  <div class="articles">
+   <div class="article-list-title" data-article-title>
+     <h2 class="article-list-title"></h2>
+   </div>
+   <div class="article-list-body">
+     <div class="article-list-container" data-article-display-container>
+       <ul class="article-list" data-articles>
+            <!-- <div class="article" data-articleDiv>
+              <li class="article-li">a -> article1
+              <button class="trash-btn"><i class="fas fa-trash"></i></button>
+              </li>
+            </div> 
+            <div class="article">
+              <li class="todo-item">a -> article2
+              <button class="trash-btn"><i class="fas fa-trash"></i></button>
+              </li>
+            </div> -->
+          </ul>
+     </div>
+     <div class="new-article-creator">
+      <form action="#" data-article-form>
+        <input type="text" class="new article" placeholder="New Article URL" data-article-input>
+        <button class="btnOfReadingList">+</button>
+      </form>
+     </div>
+     <div class="delete-stuff">
+       <button class="btnOfReadingList delete" data-clear-task-btn>Clear Articles</button>
+     </div>
+   </div>
+  </div>
+  </div>
+
   <div class="footer">
     © 2021 | Helpage | Devanshu Yadav
   </div>
@@ -391,6 +443,7 @@
       }
     });
   </script>
+    <script src="./article.js"></script>
 </body>
 
 </html>
