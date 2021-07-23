@@ -35,8 +35,8 @@
 
 </head>
 
-<body class="light-dark dark">
-  <nav class="navbar navbar-expand-lg dark light-dark ">
+<body class="light-dark">
+  <nav class="navbar navbar-expand-lg light-dark ">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand" id="helpage">Helpage</a>
 
@@ -55,7 +55,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
 
-            <div class="dropdown-menu light-dark dark" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu light-dark" aria-labelledby="navbarDropdownMenuLink">
 
               <!-- BOOKMARKS -->
               <!-- <ADD BOOKMARK HERE> -->
@@ -93,6 +93,19 @@
             <a href="https://github.com/devanshuyadav/Helpage" class="nav-link">GitHub</a>
           </div>
 
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="settings-dropdown" data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="fas fa-cog"></i>
+            </a>
+
+            <div class="dropdown-menu light-dark" aria-labelledby="settings-dropdown">
+              <div type="button" class="dropdown-item" id="settings" data-toggle="tooltip" data-placement="bottom"
+                title="Reset Preferences">
+                Change Preference
+              </div>
+            </div>
+          </div>
+
           <!-- dark mode toggle -->
           <div id="dark-mode-toggle">
             <div type="button" id="dark-mode-toggle-button" data-toggle="button" aria-pressed="false"
@@ -107,8 +120,8 @@
   <!-- <WELCOME MESSAGE> -->
   <!-- Add your Name Below after "Welcome, __" . -->
   <div class="row">
-    <div id="salutation" class="col-12 light-dark dark">
-      Welcome, Devanshu
+    <div id="salutation" class="col-12 light-dark">
+      Welcome, <span id="user_name">User</span>
     </div>
   </div>
 
@@ -116,9 +129,9 @@
   <nav class="navbar">
     <div class="container-fluid">
       <form class="d-flex search" action="https://www.google.com/search">
-        <input class="form-control me-2 searchBar dark-elem" type="search" autofocus="autofocus"
+        <input class="form-control me-2 searchBar light-dark-neo" type="search" autofocus="autofocus"
           placeholder="Powered by Google..." aria-label="Search" name=q id=q>
-        <button class="btn btn-outline btn-dark searchButton dark-elem" type="submit">🔍</button>
+        <button class="btn btn-outline btn-dark searchButton light-dark-neo" type="submit">🔍</button>
       </form>
     </div>
   </nav>
@@ -133,7 +146,7 @@
       <!-- VTOP -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://vtop.vitbhopal.ac.in/vtop/initialProcess" target="_blank">
             <img src="assets/VIT.svg" alt="VIT" height="100px">
           </a>
@@ -145,7 +158,7 @@
       <!-- Google Classroom -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://classroom.google.com/u/1/h" target="_blank">
             <img src="assets/google-classroom.svg" alt="GoogleClassroom" height="100px">
           </a>
@@ -157,7 +170,7 @@
       <!-- LinkedIn -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem ">
+        <div class="icons light-dark-neo ">
           <a href="https://www.linkedin.com/feed/" target="_blank">
             <img src="assets/linkedin.svg" alt="linkedin" height="100px">
           </a>
@@ -169,7 +182,7 @@
       <!-- GitHub -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem ">
+        <div class="icons light-dark-neo ">
           <a href="https://github.com/" target="_blank">
             <img src="assets/github.svg" alt="github" height="100px">
           </a>
@@ -181,7 +194,7 @@
       <!-- drive -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://drive.google.com/drive/my-drive" target="_blank">
             <img src="assets/drive.svg" alt="drive" height="100px">
           </a>
@@ -193,7 +206,7 @@
       <!-- google calendar -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
             <img src="assets/calendar.svg" alt="calendar" height="100">
           </a>
@@ -205,7 +218,7 @@
       <!-- trello -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://replit.com/~" target="_blank">
             <img src="assets/replit.svg" alt="Replit" height="100px">
           </a>
@@ -217,7 +230,7 @@
       <!-- codechef -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.codechef.com/" target="_blank">
             <img src="assets/codechef.svg" alt="codechef" height="100px">
           </a>
@@ -229,7 +242,7 @@
       <!-- Codeforces -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://codeforces.com/" target="_blank">
             <img src="assets/Codeforces.svg" alt="codeforces" height="100">
           </a>
@@ -241,7 +254,7 @@
       <!-- hackerrank -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.hackerrank.com/dashboard" target="_blank">
             <img src="assets/hackerrank.svg" alt="hackerrank" height="100">
           </a>
@@ -253,7 +266,7 @@
       <!-- kaggle -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.kaggle.com/" target="_blank">
             <img src="assets/kaggle.svg" alt="kaggle" height="100">
           </a>
@@ -265,7 +278,7 @@
       <!-- LeetCode -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://leetcode.com/" target="_blank">
             <img src="assets/leetCode.svg" alt="LeetCode" height="100">
           </a>
@@ -277,7 +290,7 @@
       <!-- codepen.io -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://codepen.io/pen/" target="_blank">
             <img src="assets/codepen.svg" alt="codepen" height="100">
           </a>
@@ -289,7 +302,7 @@
       <!-- Udemy -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.udemy.com/" target="_blank">
             <img src="assets/udemy.svg" alt="Udemy" height="100">
           </a>
@@ -301,7 +314,7 @@
       <!-- coursera -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.coursera.org/in" target="_blank">
             <img src="assets/coursera.svg" alt="coursera" height="100">
           </a>
@@ -313,7 +326,7 @@
       <!-- trello -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://trello.com/b/NOBWQe1g/codechef-graphic-designers" target="_blank">
             <img src="assets/trello.svg" alt="trello" height="100px">
           </a>
@@ -325,7 +338,7 @@
       <!-- personal gmail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
             <img src="assets/gmailpersonal.svg" alt="gmailpersonal" height="100px">
           </a>
@@ -337,7 +350,7 @@
       <!-- college mail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
             <img src="assets/gmailcollege.svg" alt="gmailcollege" height="100px">
           </a>
@@ -349,7 +362,7 @@
       <!-- Chess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.chess.com/home" target="_blank">
             <img src="assets/chess.svg" alt="chess" height="100">
           </a>
@@ -361,7 +374,7 @@
       <!-- lichess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://lichess.org/" target="_blank">
             <img src="assets/lichess.svg" alt="lichess" height="100">
           </a>
@@ -373,7 +386,7 @@
       <!-- medium -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://medium.com/" target="_blank">
             <img src="assets/medium.svg" alt="medium" height="100px">
           </a>
@@ -385,7 +398,7 @@
       <!-- unsplash -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://unsplash.com/" target="_blank">
             <img src="assets/unsplash.svg" alt="unsplash" height="100px">
           </a>
@@ -397,7 +410,7 @@
       <!-- youtube -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.youtube.com/" target="_blank">
             <img src="assets/youtube.svg" alt="youtube" height="100px">
           </a>
@@ -409,7 +422,7 @@
       <!-- instagram -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light-dark-neo">
           <a href="https://www.instagram.com/" target="_blank">
             <img src="assets/instagram.svg" alt="instagram" height="100px">
           </a>
@@ -424,37 +437,11 @@
   <div class="footer">
     © 2021 | Helpage | Devanshu Yadav
   </div>
-  <script>
+  <!-- <script>
     // for dark mode toggle
-    $("#dark-mode-toggle-button").on("click", function () {
-      if ($("body").hasClass("dark")) {
-        // for Toggle Button
-        $("#dark-mode-toggle-button").text("🌝");
-        // for body, salutation, dropdown & navbar
-        $(".light-dark").removeClass("dark");
-        $(".light-dark").addClass("light");
-        // for icons
-        $(".icons").removeClass("dark-elem");
-        $(".icons").addClass("light-elem");
-        // for search bar and button
-        $(".searchBar, .searchButton").removeClass("dark-elem");
-        $(".searchBar, .searchButton").addClass("light-elem");
-      }
-      else {
-        // for Toggle Button
-        $("#dark-mode-toggle-button").text("🌞");
-        // for for body, salutation, dropdown & navbar
-        $(".light-dark").removeClass("light");
-        $(".light-dark").addClass("dark");
-        // for icons
-        $(".icons").removeClass("light-elem");
-        $(".icons").addClass("dark-elem");
-        // for search bar and button
-        $(".searchBar, .searchButton").removeClass("light-elem");
-        $(".searchBar, .searchButton").addClass("dark-elem");
-      }
-    });
-  </script>
+    
+  </script> -->
+  <script src="index.js"></script>
 </body>
 
 </html>
