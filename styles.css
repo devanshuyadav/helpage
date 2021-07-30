@@ -14,19 +14,20 @@ body {
   background-color: #ececec;
   color: #000;
 }
+
 .dark,
 .dark.navbar a {
   background-color: #1f2329;
   color: #fff;
 }
 
-.light-elem {
+.light-neo {
   background-color: #ececec;
   box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6),
     10px 10px 15px rgba(70, 70, 70, 0.1);
 }
 
-.dark-elem {
+.dark-neo {
   background: #1f2329;
   box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
 }
@@ -60,6 +61,11 @@ body {
   display: inline-block;
 }
 
+#settings {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
 #salutation {
   font-size: 2rem;
 }
@@ -69,6 +75,7 @@ body {
 .dropdown-menu.light a {
   color: rgb(175, 175, 175);
 }
+
 .dropdown-menu.dark a {
   color: rgb(104, 104, 104);
 }
@@ -76,12 +83,14 @@ body {
 .dropdown-menu.light a:hover {
   color: #000;
 }
+
 .dropdown-menu.dark a:hover {
   color: #fff;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block; /* for dropdown on hover */
+  display: block;
+  /* for dropdown on hover */
   right: 1px;
 }
 
