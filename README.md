@@ -28,6 +28,8 @@ Now everytime you open your browser, you'll have all your selected websites at o
 1. [Fork]() the Repository.
 2. Clone the Repository to your Local Environment.
 3. Search for `<WELCOME MESSAGE>` in `/index.html` and Update Your Name there.
+
+**EDIT :** *"It's not required anymore, the feature is shifted to user side. You'll be asked for username and your default theme at startup only once. And you can edit that later from homepage only."*
 <br>
 <br>
 
