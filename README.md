@@ -7,7 +7,7 @@ Helpage has been tried and tested over months of usage. It has witnessed Hundred
 
 
 # **How to use Helpage?** *(Efficiently!!)*
-1. Copy the URL ```https://devanshuyadav.github.io/Helpage/```
+1. Copy the URL ```https://devanshuyadav.github.io/helpage/```
 2. Go to your Browser/s settings.
 3. Under ***'OnStartup'** (or any similar option)* , Select *'Open a Specific Page or set of pages'*.
 4. Add New Page and Paste the Copied URL.
