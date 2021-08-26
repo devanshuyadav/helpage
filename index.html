@@ -17,6 +17,7 @@
 
   <!--  Font Awesome  -->
   <script src="https://kit.fontawesome.com/a9bed65047.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <!--  Google Fonts  -->
@@ -35,8 +36,8 @@
 
 </head>
 
-<body class="light-dark">
-  <nav class="navbar navbar-expand-lg light-dark ">
+<body class="light_dark">
+  <nav class="navbar navbar-expand-lg light_dark ">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand" id="helpage">Helpage</a>
 
@@ -55,7 +56,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
 
-            <div class="dropdown-menu light-dark" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu light_dark" aria-labelledby="navbarDropdownMenuLink">
 
               <!-- BOOKMARKS -->
               <!-- <ADD BOOKMARK HERE> -->
@@ -90,19 +91,27 @@
           <!-- <div class="nav-item"><a href="README.md" class="nav-link active">About</a></div> -->
 
           <div class="nav-item">
-            <a href="https://github.com/devanshuyadav/Helpage" class="nav-link">GitHub</a>
+            <a href="https://github.com/devanshuyadav/Helpage" class="nav-link"><i class="fab fa-github"></i></a>
           </div>
 
+          <!-- settings -->
           <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="settings-dropdown" data-bs-toggle="dropdown"
-              aria-expanded="false"><i class="fas fa-cog"></i>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- add .dropdown-toggle for arrow -->
+              <i class="fas fa-cog"></i>
             </a>
 
-            <div class="dropdown-menu light-dark" aria-labelledby="settings-dropdown">
-              <div type="button" class="dropdown-item" id="settings" data-toggle="tooltip" data-placement="bottom"
-                title="Reset Preferences">
-                Change Preference
+            <div class="dropdown-menu light_dark" aria-labelledby="navbarDropdownMenuLink">
+              <div class="grid">
+                <div class="grid-item">Name</div>
+                <a id="name_change" class="grid-item"><i class="fas fa-pen"></i></a>
+                <div class="grid-item">CC</div>
+                <input class="grid-item" type="checkbox" name="CC" id="closedCaptions">
+                <div class="grid-item">Open in New tab?</div>
+                <input class="grid-item" type="checkbox" name="" id="newTab">
               </div>
+
+
             </div>
           </div>
 
@@ -120,7 +129,7 @@
   <!-- <WELCOME MESSAGE> -->
   <!-- Add your Name Below after "Welcome, __" . -->
   <div class="row">
-    <div id="salutation" class="col-12 light-dark">
+    <div id="salutation" class="col-12 light_dark">
       Welcome, <span id="user_name">User</span>
     </div>
   </div>
@@ -129,9 +138,9 @@
   <nav class="navbar">
     <div class="container-fluid">
       <form class="d-flex search" action="https://www.google.com/search">
-        <input class="form-control me-2 searchBar light-dark-neo" type="search" autofocus="autofocus"
+        <input class="form-control me-2 searchBar light_dark_neo" type="search" autofocus="autofocus"
           placeholder="Powered by Google..." aria-label="Search" name=q id=q>
-        <button class="btn btn-outline btn-dark searchButton light-dark-neo" type="submit">🔍</button>
+        <button class="btn btn-outline btn-dark searchButton light_dark_neo" type="submit">🔍</button>
       </form>
     </div>
   </nav>
@@ -146,10 +155,11 @@
       <!-- VTOP -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://vtop.vitbhopal.ac.in/vtop/initialProcess" target="_blank">
             <img src="assets/VIT.svg" alt="VIT" height="100px">
           </a>
+          <span class="hover_txt">VTOP Portal</span>
         </div>
       </div>
 
@@ -158,10 +168,11 @@
       <!-- Google Classroom -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://classroom.google.com/u/1/h" target="_blank">
             <img src="assets/google-classroom.svg" alt="GoogleClassroom" height="100px">
           </a>
+          <span class="hover_txt">Classroom</span>
         </div>
       </div>
 
@@ -170,10 +181,11 @@
       <!-- LinkedIn -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo ">
+        <div class="icons light_dark_neo ">
           <a href="https://www.linkedin.com/feed/" target="_blank">
             <img src="assets/linkedin.svg" alt="linkedin" height="100px">
           </a>
+          <span class="hover_txt">LinkedIn</span>
         </div>
       </div>
 
@@ -182,10 +194,11 @@
       <!-- GitHub -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo ">
+        <div class="icons light_dark_neo ">
           <a href="https://github.com/" target="_blank">
             <img src="assets/github.svg" alt="github" height="100px">
           </a>
+          <span class="hover_txt">GitHub</span>
         </div>
       </div>
 
@@ -194,10 +207,11 @@
       <!-- drive -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://drive.google.com/drive/my-drive" target="_blank">
             <img src="assets/drive.svg" alt="drive" height="100px">
           </a>
+          <span class="hover_txt">Drive</span>
         </div>
       </div>
 
@@ -206,22 +220,24 @@
       <!-- google calendar -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
             <img src="assets/calendar.svg" alt="calendar" height="100">
           </a>
+          <span class="hover_txt">Calendar</span>
         </div>
       </div>
 
       <!-- <ADD ICON HERE> -->
 
-      <!-- trello -->
+      <!-- Replit -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://replit.com/~" target="_blank">
             <img src="assets/replit.svg" alt="Replit" height="100px">
           </a>
+          <span class="hover_txt">Repl.it</span>
         </div>
       </div>
 
@@ -230,10 +246,11 @@
       <!-- codechef -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.codechef.com/" target="_blank">
             <img src="assets/codechef.svg" alt="codechef" height="100px">
           </a>
+          <span class="hover_txt">CodeChef</span>
         </div>
       </div>
 
@@ -242,10 +259,11 @@
       <!-- Codeforces -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://codeforces.com/" target="_blank">
             <img src="assets/Codeforces.svg" alt="codeforces" height="100">
           </a>
+          <span class="hover_txt">CodeForces</span>
         </div>
       </div>
 
@@ -254,10 +272,11 @@
       <!-- hackerrank -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.hackerrank.com/dashboard" target="_blank">
             <img src="assets/hackerrank.svg" alt="hackerrank" height="100">
           </a>
+          <span class="hover_txt">HackerRank</span>
         </div>
       </div>
 
@@ -266,10 +285,11 @@
       <!-- kaggle -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.kaggle.com/" target="_blank">
             <img src="assets/kaggle.svg" alt="kaggle" height="100">
           </a>
+          <span class="hover_txt">Kaggle</span>
         </div>
       </div>
 
@@ -278,10 +298,11 @@
       <!-- LeetCode -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://leetcode.com/" target="_blank">
             <img src="assets/leetCode.svg" alt="LeetCode" height="100">
           </a>
+          <span class="hover_txt">LeetCode</span>
         </div>
       </div>
 
@@ -290,10 +311,11 @@
       <!-- codepen.io -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://codepen.io/pen/" target="_blank">
             <img src="assets/codepen.svg" alt="codepen" height="100">
           </a>
+          <span class="hover_txt">CodePen</span>
         </div>
       </div>
 
@@ -302,10 +324,11 @@
       <!-- Udemy -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.udemy.com/" target="_blank">
             <img src="assets/udemy.svg" alt="Udemy" height="100">
           </a>
+          <span class="hover_txt">Udemy</span>
         </div>
       </div>
 
@@ -314,10 +337,11 @@
       <!-- coursera -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.coursera.org/in" target="_blank">
             <img src="assets/coursera.svg" alt="coursera" height="100">
           </a>
+          <span class="hover_txt">Coursera</span>
         </div>
       </div>
 
@@ -326,10 +350,11 @@
       <!-- trello -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://trello.com/b/NOBWQe1g/codechef-graphic-designers" target="_blank">
             <img src="assets/trello.svg" alt="trello" height="100px">
           </a>
+          <span class="hover_txt">Trello</span>
         </div>
       </div>
 
@@ -338,10 +363,11 @@
       <!-- personal gmail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
             <img src="assets/gmailpersonal.svg" alt="gmailpersonal" height="100px">
           </a>
+          <span class="hover_txt">Personal Mail</span>
         </div>
       </div>
 
@@ -350,10 +376,11 @@
       <!-- college mail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
             <img src="assets/gmailcollege.svg" alt="gmailcollege" height="100px">
           </a>
+          <span class="hover_txt">College Mail</span>
         </div>
       </div>
 
@@ -362,10 +389,11 @@
       <!-- Chess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.chess.com/home" target="_blank">
             <img src="assets/chess.svg" alt="chess" height="100">
           </a>
+          <span class="hover_txt">Chess.com</span>
         </div>
       </div>
 
@@ -374,10 +402,11 @@
       <!-- lichess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://lichess.org/" target="_blank">
             <img src="assets/lichess.svg" alt="lichess" height="100">
           </a>
+          <span class="hover_txt">lichess</span>
         </div>
       </div>
 
@@ -386,10 +415,11 @@
       <!-- medium -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://medium.com/" target="_blank">
             <img src="assets/medium.svg" alt="medium" height="100px">
           </a>
+          <span class="hover_txt">Medium</span>
         </div>
       </div>
 
@@ -398,10 +428,11 @@
       <!-- unsplash -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://unsplash.com/" target="_blank">
             <img src="assets/unsplash.svg" alt="unsplash" height="100px">
           </a>
+          <span class="hover_txt">Unsplash</span>
         </div>
       </div>
 
@@ -410,10 +441,11 @@
       <!-- youtube -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.youtube.com/" target="_blank">
             <img src="assets/youtube.svg" alt="youtube" height="100px">
           </a>
+          <span class="hover_txt">YouTube</span>
         </div>
       </div>
 
@@ -422,10 +454,11 @@
       <!-- instagram -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons light-dark-neo">
+        <div class="icons light_dark_neo">
           <a href="https://www.instagram.com/" target="_blank">
             <img src="assets/instagram.svg" alt="instagram" height="100px">
           </a>
+          <span class="hover_txt">Instagram</span>
         </div>
       </div>
 
