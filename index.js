@@ -60,24 +60,24 @@ function setTheme() {
   let newTheme; // light or dark
   let preference = JSON.parse(localStorage.getItem("HELPAGE_SETTINGS"));
   if (localStorage.getItem("HELPAGE_SETTINGS") && preference.theme != "") {
-    // user data exists locally
+    // user data exists locally 
     newTheme = preference.theme;
     user.theme = preference.theme;
-  } else {
+  }
+  else {
     // no user data preset
-    if ($("#dark-mode-toggle-button").text() === light) {
-      newTheme = "light";
-    } else if ($("#dark-mode-toggle-button").text() === dark) {
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
       newTheme = "dark";
-    } else {
-      console.log("Theme Not Recognized");
+    }
+    else {
+      newTheme = "light";
     }
     user.theme = newTheme; // for Local Storage
     localStorage.setItem("HELPAGE_SETTINGS", JSON.stringify(user));
   }
   // action
-  $(".light_dark").addClass(newTheme);
-  $(".light_dark_neo").addClass(newTheme + "_neo");
+  $('.light_dark').addClass(newTheme);
+  $('.light_dark_neo').addClass(newTheme + "_neo");
 }
 
 // Click Theme
