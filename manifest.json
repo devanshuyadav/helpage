@@ -1,0 +1,9 @@
+{
+  "short_name": "hpg",
+  "name": "helpage",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "background_color": "#ececec",
+  "theme_color": "#ececec"
+}
