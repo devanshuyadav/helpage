@@ -61,14 +61,11 @@ function setTheme() {
     }
     else {
         // no user data preset
-        if ($("#dark-mode-toggle-button").text() === light) {
-            newTheme = "light";
-        }
-        else if ($("#dark-mode-toggle-button").text() === dark) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             newTheme = "dark";
         }
         else {
-            console.log("Theme Not Recognized");
+            newTheme = "light";
         }
         user.theme = newTheme; // for Local Storage
         localStorage.setItem("HELPAGE_SETTINGS", JSON.stringify(user));
@@ -211,8 +208,8 @@ $('#newTab').click(function () {
 
 // Sub-Main
 function initializeHelpage() {
-    setName();
     setTheme();
+    setName();
     setCC();
     setNewTab();
 }
