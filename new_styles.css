@@ -104,7 +104,6 @@ input[type="checkbox"] {
 
 .dropdown-menu.dark a:hover {
   color: black;
-  letter-spacing: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
   -webkit-transition: color 0s ease-in;
