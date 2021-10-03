@@ -119,7 +119,7 @@ input[type="checkbox"] {
 }
 
 .dropdown-menu.dark a:hover {
-    color: black;
+    // color: black;
     // letter-spacing: 1px;
     // background-color: purple;
     background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
@@ -131,7 +131,7 @@ input[type="checkbox"] {
 .dropdown-menu.light div {
     // color: #000;
     //^^ redundant since 'a' tag given color
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .dropdown-menu.dark div {
@@ -222,6 +222,70 @@ img:hover {
 /* bookmark */
 .bookmark_member {
     color: black;
+}
+
+.bookmarks {
+    // background-color: rgba(0, 0, 0, 0);
+    // width:260%;
+    word-wrap: break-word;
+
+    // transition: all 2s ease-in;
+}
+.bookmarks.light {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px grey;
+}
+.bookmarks.dark {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+}
+.bookmarks.light a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.bookmarks.dark a {
+    color: rgba(255, 255, 255, 1);
+
+    // background-color: blue;
+    // background-image: linear-gradient(to right, blue, rgba(0, 0, 0, 0));
+}
+
+.bookmarks.light a:hover {
+    color: white;
+    // background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+    background-color: rgb(158, 158, 158);
+    transition: color 0s ease-in;
+}
+
+.bookmarks.dark a:hover {
+    color: black;
+    // letter-spacing: 1px;
+    // background-color: purple;
+    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
+
+    transition: color 0s ease-in;
+    // transition: letter-spacing 0.5s ease-in;
+}
+
+.bookmarks.light div {
+    // color: #000;
+    //^^ redundant since 'a' tag given color
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.bookmarks.dark div {
+    // color: #fff;
+    //^^ redundant since 'a' tag given color
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.dropdown .bookmarks {
+    /* display: block; */
+    /* for dropdown on hover */
+    top: 110%;
+    left: -150px;
 }
 
 /* footer */
