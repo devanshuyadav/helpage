@@ -36,21 +36,18 @@
 </head>
 
 <body class="light_dark" onload="fetchBookmarks()">
-  <div class="bookmark_toggle_btn">
-
-  </div>
-  <div class="row">
-    <div id="bookmarks col-12">
-      <form id="myForm">
-        <div class="col-5 form-group">
-          <label for="">Site Name</label>
-          <input type="text" class="form-control" id="siteName" placeholder="enter name of site">
+  <div class="row" id="bookmarks_parent" style="display: none;">
+    <div id="bookmarks" class="light_dark">
+      <form id="myForm" class="col-12">
+        <div class="col-4 form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="siteName" placeholder="Enter Name for Bookmark">
         </div>
-        <div class="col-5 form-group">
-          <label for="">Site URL</label>
-          <input type="URL" class="form-control" id="siteURL" placeholder="enter address of site">
+        <div class="col-4 form-group">
+          <label for="">URL</label>
+          <input type="text" class="form-control" id="siteURL" placeholder="Enter URL to Bookmark">
         </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit">Add Bookmark</button>
       </form>
     </div>
   </div>
@@ -70,40 +67,12 @@
 
         <div class="navbar-nav mr-auto">
 
-          <div class="nav-item dropdown">
+          <div class="nav-item dropdown" style="display: flex; height: 44.5px">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
-
-            <div class="dropdown-menu bookmarks light_dark" aria-labelledby="navbarDropdownMenuLink">
-
-              <!-- BOOKMARKS -->
-              <div class="dropdown-item" id="bookmarksOutput"></div>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://hackdsc.tech/#home" class="dropdown-item">HACKDSC'21</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://mizanxali.github.io/GWL-elecTRON/" class="dropdown-item">GWL-elecTRON</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a class="dropdown-item" href="https://infinite.education/expertise/Android_Developer_2021">Roadmap to
-                Android</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://whimsical.com/competitive-programming-guide-M8Bvyog3sstD1MpzxbPP3C"
-                class="dropdown-item">Roadmap to Competitive Programming</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9"
-                class="dropdown-item">Preparation journey for Google</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a class="dropdown-item" href="https://threejs.org/">Three JS</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://www.frontendmentor.io/" class="dropdown-item">FrontEnd Challenges</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://cssbattle.dev/" class="dropdown-item">CSS Battle</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <div class="dropdown-divider"></div>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://www.minifier.org/" class="dropdown-item">Minify JS/CSS</a>
-              <!-- <ADD BOOKMARK HERE> -->
-
-            </div>
+            <div class="dropdown-menu bookmarks light_dark" aria-labelledby="navbarDropdownMenuLink"
+              id="bookmarksOutput"></div>
+            <button class="btn light_dark" id="bookmarks_toggler">+ Add</button>
 
           </div>
 

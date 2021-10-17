@@ -1,0 +1,45 @@
+/* bookmarks - for adding */
+
+#bookmarks {
+  z-index: 999;
+}
+#bookmarks > form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+#bookmarks > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+#bookmarks > form > div > label {
+  padding: 0 10px 0 0;
+  font-size: 16px;
+}
+#bookmarks > form > div > input::placeholder {
+  font-size: 14px;
+}
+
+/* Bookmarks - for viewing */
+#bookmarksOutput {
+  width: 200px;
+}
+
+#bookmarksOutput > span {
+  display: flex;
+}
+
+#bookmarks_toggler {
+  border: 1px solid;
+  font-size: 18px;
+  padding: 0 10px;
+}
+#bookmarks_toggler.dark:hover {
+  color: white;
+}

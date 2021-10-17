@@ -1,4 +1,8 @@
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
+var bookmarksParentDiv = document.getElementById('bookmarks_parent');
+var formDiv = document.getElementById('myForm');
+var bookmarksOutput = document.getElementById('bookmarksOutput');
+var bookmarksToggler = document.getElementById('bookmarks_toggler');
 
 function saveBookmark(e) {
     var siteName = document.getElementById('siteName').value;
@@ -24,16 +28,20 @@ function saveBookmark(e) {
     localStorage.setItem("HELPAGE_BOOKMARKS", JSON.stringify(bookmarks));
 
     // clear after submit
-    document.getElementById('myForm').reset();
+    formDiv.reset();
 
     // update instantly after submitting
     fetchBookmarks();
+
+    // Close div afterwards
+    bookmarksParentDiv.style.display = "none";
 
     e.preventDefault();
 }
 function deleteBookmark(url) {
     // get
     var bookmarks = JSON.parse(localStorage.getItem("HELPAGE_BOOKMARKS"));
+
     // change
     for (var i = 0; i < bookmarks.length; i++) {
         if (bookmarks[i].URL = url) {
@@ -41,31 +49,28 @@ function deleteBookmark(url) {
             bookmarks.splice(i, 1);
         }
     }
+
     // reset
     localStorage.setItem("HELPAGE_BOOKMARKS", JSON.stringify(bookmarks));
+
     // reload
     fetchBookmarks();
-
-
 }
 
 function fetchBookmarks() {
     // get bookmarks from local storage
     var bookmarks = JSON.parse(localStorage.getItem("HELPAGE_BOOKMARKS"));
-    var bookmarksOutput = document.getElementById('bookmarksOutput');
+
     bookmarksOutput.innerHTML = '';
     for (var i = 0; i < bookmarks.length; i++) {
         var name = bookmarks[i].name;
         var URL = bookmarks[i].URL;
 
-        // bookmarksOutput.innerHTML += '<div>' +
-        //     '<a class="btn btn-primary" target="_blank" href = "' + URL + '"<h5>' + name + '</h5></a>' +
-        //     '<a onclick="deleteBookmark(\'' + URL + '\')" class="btn btn-danger" href="#"> X </a>' +
-        //     '</div>';
-        bookmarksOutput.innerHTML += "<a href=" + URL + " class=\"dropdown-item\">" + name + "</a>" +
-            '<a onclick="deleteBookmark(\'' + URL + '\')" class="btn btn-danger" href="#"> X </a>';
+        bookmarksOutput.innerHTML += '<span>' +
+            '<a href="' + URL + '" class="dropdown-item" target="_blank" >' + name + '</a>' +
+            '<a onclick="deleteBookmark(\'' + URL + '\')" class="btn " href="#"> X </a>' +
+            '</span>';
     }
-
 }
 
 function validateEntries(siteName, siteURL) {
@@ -82,3 +87,12 @@ function validateEntries(siteName, siteURL) {
     }
     return true;
 }
+
+bookmarksToggler.addEventListener('click', function () {
+    console.log(bookmarksParentDiv.style.display)
+    if (bookmarksParentDiv.style.display !== "none") {
+        bookmarksParentDiv.style.display = "none";
+    } else {
+        bookmarksParentDiv.style.display = "block";
+    }
+});
