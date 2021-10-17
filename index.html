@@ -5,27 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="./manifest.json">
   <title>Helpage | Purpose-Built favourites site</title>
 
   <!--  Bootstrap  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!--  StyleSheet  -->
+  <link rel="stylesheet" href="style.css">
 
   <!--  Font Awesome  -->
   <script src="https://kit.fontawesome.com/a9bed65047.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <!--  Google Fonts  -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
-
-  <!--  StyleSheet  -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="article.css">
 
   <!--  Favicon  -->
   <link rel="shortcut icon" href="images/green-favicon.ico" type="image/x-icon">
@@ -34,12 +32,10 @@
   <!--  Bootstrap JS  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-
-
 </head>
 
-<body class="light-dark dark">
-  <nav class="navbar navbar-expand-lg dark light-dark ">
+<body class="light_dark">
+  <nav class="navbar navbar-expand-lg light_dark ">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand" id="helpage">Helpage</a>
 
@@ -58,21 +54,33 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
 
-            <div class="dropdown-menu light-dark dark" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu bookmarks light_dark" aria-labelledby="navbarDropdownMenuLink">
 
+              <!-- BOOKMARKS -->
+              <!-- <ADD BOOKMARK HERE> -->
               <a href="https://hackdsc.tech/#home" class="dropdown-item">HACKDSC'21</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a href="https://mizanxali.github.io/GWL-elecTRON/" class="dropdown-item">GWL-elecTRON</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a class="dropdown-item" href="https://infinite.education/expertise/Android_Developer_2021">Roadmap to
                 Android</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a href="https://whimsical.com/competitive-programming-guide-M8Bvyog3sstD1MpzxbPP3C"
                 class="dropdown-item">Roadmap to Competitive Programming</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a href="https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9"
                 class="dropdown-item">Preparation journey for Google</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a class="dropdown-item" href="https://threejs.org/">Three JS</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a href="https://www.frontendmentor.io/" class="dropdown-item">FrontEnd Challenges</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <a href="https://cssbattle.dev/" class="dropdown-item">CSS Battle</a>
+              <!-- <ADD BOOKMARK HERE> -->
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">All Bookmarks</a>
+              <!-- <ADD BOOKMARK HERE> -->
+              <a href="https://www.minifier.org/" class="dropdown-item">Minify JS/CSS</a>
+              <!-- <ADD BOOKMARK HERE> -->
 
             </div>
 
@@ -81,7 +89,28 @@
           <!-- <div class="nav-item"><a href="README.md" class="nav-link active">About</a></div> -->
 
           <div class="nav-item">
-            <a href="https://github.com/devanshuyadav/Helpage" class="nav-link">GitHub</a>
+            <a href="https://github.com/devanshuyadav/Helpage" class="nav-link"><i class="fab fa-github"></i></a>
+          </div>
+
+          <!-- settings -->
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- add .dropdown-toggle for arrow -->
+              <i class="fas fa-cog"></i>
+            </a>
+
+            <div class="dropdown-menu settings light_dark" aria-labelledby="navbarDropdownMenuLink">
+              <div class="grid">
+                <div class="grid-item">Name</div>
+                <a id="name_change" class="grid-item"><i class="fas fa-pen"></i></a>
+                <div class="grid-item">CC</div>
+                <input class="grid-item" type="checkbox" name="CC" id="closedCaptions">
+                <div class="grid-item">Open in New tab?</div>
+                <input class="grid-item" type="checkbox" name="" id="newTab">
+              </div>
+
+
+            </div>
           </div>
 
           <!-- dark mode toggle -->
@@ -95,9 +124,11 @@
   </nav>
 
   <!-- heading -->
+  <!-- <WELCOME MESSAGE> -->
+  <!-- Add your Name Below after "Welcome, __" . -->
   <div class="row">
-    <div id="salutation" class="col-12 light-dark dark">
-      Welcome, Devanshu
+    <div id="salutation" class="col-12 light_dark">
+      Welcome, <span id="user_name">User</span>
     </div>
   </div>
 
@@ -105,9 +136,9 @@
   <nav class="navbar">
     <div class="container-fluid">
       <form class="d-flex search" action="https://www.google.com/search">
-        <input class="form-control me-2 searchBar dark-elem" type="search" autofocus="autofocus"
+        <input class="form-control me-2 searchBar light_dark_neo" type="search" autofocus="autofocus"
           placeholder="Powered by Google..." aria-label="Search" name=q id=q>
-        <button class="btn btn-outline btn-dark searchButton dark-elem" type="submit">🔍</button>
+        <button class="btn btn-outline btn-dark searchButton light_dark_neo" type="submit">🔍</button>
       </form>
     </div>
   </nav>
@@ -117,333 +148,334 @@
   <div class="container">
     <div class="row bootstrapRow">
 
+      <!-- <ADD ICON HERE> -->
+
       <!-- VTOP -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://vtop.vitbhopal.ac.in/vtop/initialProcess" target="_blank">
             <img src="assets/VIT.svg" alt="VIT" height="100px">
           </a>
+          <span class="hover_txt">VTOP Portal</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- Google Classroom -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://classroom.google.com/u/1/h" target="_blank">
             <img src="assets/google-classroom.svg" alt="GoogleClassroom" height="100px">
           </a>
+          <span class="hover_txt">Classroom</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- LinkedIn -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem ">
+        <div class="icons light_dark_neo ">
           <a href="https://www.linkedin.com/feed/" target="_blank">
             <img src="assets/linkedin.svg" alt="linkedin" height="100px">
           </a>
+          <span class="hover_txt">LinkedIn</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- GitHub -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem ">
+        <div class="icons light_dark_neo ">
           <a href="https://github.com/" target="_blank">
             <img src="assets/github.svg" alt="github" height="100px">
           </a>
+          <span class="hover_txt">GitHub</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- drive -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://drive.google.com/drive/my-drive" target="_blank">
             <img src="assets/drive.svg" alt="drive" height="100px">
           </a>
+          <span class="hover_txt">Drive</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- google calendar -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
             <img src="assets/calendar.svg" alt="calendar" height="100">
           </a>
+          <span class="hover_txt">Calendar</span>
         </div>
       </div>
 
-      <!-- trello -->
+      <!-- <ADD ICON HERE> -->
+
+      <!-- Replit -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://replit.com/~" target="_blank">
             <img src="assets/replit.svg" alt="Replit" height="100px">
           </a>
+          <span class="hover_txt">Repl.it</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- codechef -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.codechef.com/" target="_blank">
             <img src="assets/codechef.svg" alt="codechef" height="100px">
           </a>
+          <span class="hover_txt">CodeChef</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- Codeforces -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://codeforces.com/" target="_blank">
             <img src="assets/Codeforces.svg" alt="codeforces" height="100">
           </a>
+          <span class="hover_txt">CodeForces</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- hackerrank -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.hackerrank.com/dashboard" target="_blank">
             <img src="assets/hackerrank.svg" alt="hackerrank" height="100">
           </a>
+          <span class="hover_txt">HackerRank</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- kaggle -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.kaggle.com/" target="_blank">
             <img src="assets/kaggle.svg" alt="kaggle" height="100">
           </a>
+          <span class="hover_txt">Kaggle</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- LeetCode -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://leetcode.com/" target="_blank">
             <img src="assets/leetCode.svg" alt="LeetCode" height="100">
           </a>
+          <span class="hover_txt">LeetCode</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- codepen.io -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://codepen.io/pen/" target="_blank">
             <img src="assets/codepen.svg" alt="codepen" height="100">
           </a>
+          <span class="hover_txt">CodePen</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- Udemy -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.udemy.com/" target="_blank">
-            <img src="assets/udemy.svg" alt="Udemy" height="100">
+            <img src="assets/udemy_new.svg" alt="Udemy" height="100">
           </a>
+          <span class="hover_txt">Udemy</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- coursera -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.coursera.org/in" target="_blank">
             <img src="assets/coursera.svg" alt="coursera" height="100">
           </a>
+          <span class="hover_txt">Coursera</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- trello -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://trello.com/b/NOBWQe1g/codechef-graphic-designers" target="_blank">
             <img src="assets/trello.svg" alt="trello" height="100px">
           </a>
+          <span class="hover_txt">Trello</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- personal gmail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
             <img src="assets/gmailpersonal.svg" alt="gmailpersonal" height="100px">
           </a>
+          <span class="hover_txt">Personal Mail</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- college mail -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
             <img src="assets/gmailcollege.svg" alt="gmailcollege" height="100px">
           </a>
+          <span class="hover_txt">College Mail</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- Chess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.chess.com/home" target="_blank">
             <img src="assets/chess.svg" alt="chess" height="100">
           </a>
+          <span class="hover_txt">Chess.com</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- lichess -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://lichess.org/" target="_blank">
             <img src="assets/lichess.svg" alt="lichess" height="100">
           </a>
+          <span class="hover_txt">lichess</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- medium -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://medium.com/" target="_blank">
             <img src="assets/medium.svg" alt="medium" height="100px">
           </a>
+          <span class="hover_txt">Medium</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- unsplash -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://unsplash.com/" target="_blank">
             <img src="assets/unsplash.svg" alt="unsplash" height="100px">
           </a>
+          <span class="hover_txt">Unsplash</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- youtube -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.youtube.com/" target="_blank">
             <img src="assets/youtube.svg" alt="youtube" height="100px">
           </a>
+          <span class="hover_txt">YouTube</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- instagram -->
 
       <div class="col-sm-4 col-4 col-lg-2 col-md-3">
-        <div class="icons dark-elem">
+        <div class="icons light_dark_neo">
           <a href="https://www.instagram.com/" target="_blank">
             <img src="assets/instagram.svg" alt="instagram" height="100px">
           </a>
+          <span class="hover_txt">Instagram</span>
         </div>
       </div>
+
+      <!-- <ADD ICON HERE> -->
 
       <!-- end of icons bar -->
     </div>
   </div>
-
-<!-- reading list -->
-<div class="reading-list">
-  <div class="domains">
-  <h2 class="domain-list-title">Domains</h2>
-   <ul class="domain-list" data-domains>
-     <!-- <li>a</li>
-     <li>b</li>
-     <li>c</li> -->
-   </ul>
-   <form action="#" data-domain-form>
-     <input type="text" class="new domain" placeholder="New Domain" data-domain-input>
-     <button class="btnOfReadingList">+</button>
-   </form>
-  </div>
-  
-  
-  <div class="articles">
-   <div class="article-list-title" data-article-title>
-     <h2 class="article-list-title"></h2>
-   </div>
-   <div class="article-list-body">
-     <div class="article-list-container" data-article-display-container>
-       <ul class="article-list" data-articles>
-            <!-- <div class="article" data-articleDiv>
-              <li class="article-li">a -> article1
-              <button class="trash-btn"><i class="fas fa-trash"></i></button>
-              </li>
-            </div> 
-            <div class="article">
-              <li class="todo-item">a -> article2
-              <button class="trash-btn"><i class="fas fa-trash"></i></button>
-              </li>
-            </div> -->
-          </ul>
-     </div>
-     <div class="new-article-creator">
-      <form action="#" data-article-form>
-        <input type="text" class="new article" placeholder="New Article URL" data-article-input>
-        <button class="btnOfReadingList">+</button>
-      </form>
-     </div>
-     <div class="delete-stuff">
-       <button class="btnOfReadingList delete" data-clear-task-btn>Clear Articles</button>
-     </div>
-   </div>
-  </div>
-  </div>
-
   <div class="footer">
     © 2021 | Helpage | Devanshu Yadav
   </div>
-  <script>
+  <!-- <script>
     // for dark mode toggle
-    $("#dark-mode-toggle-button").on("click", function () {
-      if ($("body").hasClass("dark")) {
-        // for Toggle Button
-        $("#dark-mode-toggle-button").text("🌝");
-        // for body, salutation, dropdown & navbar
-        $(".light-dark").removeClass("dark");
-        $(".light-dark").addClass("light");
-        // for icons
-        $(".icons").removeClass("dark-elem");
-        $(".icons").addClass("light-elem");
-        // for search bar and button
-        $(".searchBar, .searchButton").removeClass("dark-elem");
-        $(".searchBar, .searchButton").addClass("light-elem");
-      }
-      else {
-        // for Toggle Button
-        $("#dark-mode-toggle-button").text("🌞");
-        // for for body, salutation, dropdown & navbar
-        $(".light-dark").removeClass("light");
-        $(".light-dark").addClass("dark");
-        // for icons
-        $(".icons").removeClass("light-elem");
-        $(".icons").addClass("dark-elem");
-        // for search bar and button
-        $(".searchBar, .searchButton").removeClass("light-elem");
-        $(".searchBar, .searchButton").addClass("dark-elem");
-      }
-    });
-  </script>
-    <script src="./article.js"></script>
+    
+  </script> -->
+  <script src="index.js"></script>
+  <!--  Bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
