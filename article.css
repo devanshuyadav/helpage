@@ -1,0 +1,35 @@
+
+.reading-list{
+  display: grid;
+  grid: ". domains articles ." auto /
+  1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+  text-align: left;
+}
+
+.domains{
+ grid-area: domains;
+ display: flex;
+ flex-direction: column;
+}
+
+.articles{
+  grid-area: articles;
+}
+
+
+.btnOfReadingList{
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+.domain-list > li{
+  cursor: pointer;
+}
+
+.active-domain{
+  font-weight: 900;
+  background-color: brown;
+}
+.fa-trash{
+  pointer-events: none;
+}

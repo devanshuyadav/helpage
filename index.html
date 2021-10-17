@@ -10,11 +10,12 @@
   <title>Helpage | Purpose-Built favourites site</title>
 
   <!--  Bootstrap  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
   <!--  StyleSheet  -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bookmarks.css">
 
   <!--  Font Awesome  -->
   <script src="https://kit.fontawesome.com/a9bed65047.js" crossorigin="anonymous"></script>
@@ -34,7 +35,23 @@
 
 </head>
 
-<body class="light_dark">
+<body class="light_dark" onload="fetchBookmarks()">
+  <div class="row" id="bookmarks_parent" style="display: none;">
+    <div id="bookmarks" class="light_dark">
+      <form id="myForm" class="col-12">
+        <div class="col-4 form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="siteName" placeholder="Enter Name for Bookmark">
+        </div>
+        <div class="col-4 form-group">
+          <label for="">URL</label>
+          <input type="text" class="form-control" id="siteURL" placeholder="Enter URL to Bookmark">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Bookmark</button>
+      </form>
+    </div>
+  </div>
+
   <nav class="navbar navbar-expand-lg light_dark ">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand" id="helpage">Helpage</a>
@@ -50,39 +67,12 @@
 
         <div class="navbar-nav mr-auto">
 
-          <div class="nav-item dropdown">
+          <div class="nav-item dropdown" style="display: flex; height: 44.5px">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
-
-            <div class="dropdown-menu bookmarks light_dark" aria-labelledby="navbarDropdownMenuLink">
-
-              <!-- BOOKMARKS -->
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://hackdsc.tech/#home" class="dropdown-item">HACKDSC'21</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://mizanxali.github.io/GWL-elecTRON/" class="dropdown-item">GWL-elecTRON</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a class="dropdown-item" href="https://infinite.education/expertise/Android_Developer_2021">Roadmap to
-                Android</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://whimsical.com/competitive-programming-guide-M8Bvyog3sstD1MpzxbPP3C"
-                class="dropdown-item">Roadmap to Competitive Programming</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9"
-                class="dropdown-item">Preparation journey for Google</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a class="dropdown-item" href="https://threejs.org/">Three JS</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://www.frontendmentor.io/" class="dropdown-item">FrontEnd Challenges</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://cssbattle.dev/" class="dropdown-item">CSS Battle</a>
-              <!-- <ADD BOOKMARK HERE> -->
-              <div class="dropdown-divider"></div>
-              <!-- <ADD BOOKMARK HERE> -->
-              <a href="https://www.minifier.org/" class="dropdown-item">Minify JS/CSS</a>
-              <!-- <ADD BOOKMARK HERE> -->
-
-            </div>
+            <div class="dropdown-menu bookmarks light_dark" aria-labelledby="navbarDropdownMenuLink"
+              id="bookmarksOutput"></div>
+            <button class="btn light_dark" id="bookmarks_toggler">+ Add</button>
 
           </div>
 
@@ -473,9 +463,9 @@
     
   </script> -->
   <script src="index.js"></script>
+  <script src="bookmarks.js"></script>
   <!--  Bootstrap  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 </body>
-
-</html>

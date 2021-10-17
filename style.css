@@ -41,14 +41,16 @@ input[type="checkbox"] {
 
 .light_neo {
   background-color: #ececec;
-  -webkit-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6), 10px 10px 15px rgba(70, 70, 70, 0.1);
-          box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6), 10px 10px 15px rgba(70, 70, 70, 0.1);
+  -webkit-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6),
+    10px 10px 15px rgba(70, 70, 70, 0.1);
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6),
+    10px 10px 15px rgba(70, 70, 70, 0.1);
 }
 
 .dark_neo {
   background: #1f2329;
   -webkit-box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
-          box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
+  box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
 }
 
 .container-fluid {
@@ -93,14 +95,14 @@ input[type="checkbox"] {
   border: none;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 20px grey;
-          box-shadow: 2px 2px 20px grey;
+  box-shadow: 2px 2px 20px grey;
 }
 
 .dropdown-menu.dark {
   border: none;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 20px black;
-          box-shadow: 2px 2px 20px black;
+  box-shadow: 2px 2px 20px black;
 }
 
 .dropdown-menu.light a {
@@ -109,19 +111,6 @@ input[type="checkbox"] {
 
 .dropdown-menu.dark a {
   color: white;
-}
-
-.dropdown-menu.light a:hover {
-  background-color: #9e9e9e;
-  -webkit-transition: color 0s ease-in;
-  transition: color 0s ease-in;
-}
-
-.dropdown-menu.dark a:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
-  -webkit-transition: color 0s ease-in;
-  transition: color 0s ease-in;
 }
 
 .dropdown-menu.light div {
@@ -144,19 +133,19 @@ input[type="checkbox"] {
   display: grid;
   width: 220px;
   -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
+  grid-template-columns: 70% 30%;
   -ms-grid-rows: 40px 40px;
-      grid-template-rows: 40px 40px;
+  grid-template-rows: 40px 40px;
 }
 
 .grid-item {
   margin: 10px 0 10px 10px;
   font-size: 1rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 /* searchBar */
@@ -181,8 +170,8 @@ input[type="checkbox"] {
 .icons {
   position: relative;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: inline-block;
   margin: 15px;
   border-radius: 50%;
@@ -218,7 +207,7 @@ img:hover {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
   -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -236,14 +225,14 @@ img:hover {
   border: none;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 20px grey;
-          box-shadow: 2px 2px 20px grey;
+  box-shadow: 2px 2px 20px grey;
 }
 
 .bookmarks.dark {
   border: none;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 20px black;
-          box-shadow: 2px 2px 20px black;
+  box-shadow: 2px 2px 20px black;
 }
 
 .bookmarks.light a {
@@ -252,21 +241,6 @@ img:hover {
 
 .bookmarks.dark a {
   color: white;
-}
-
-.bookmarks.light a:hover {
-  color: white;
-  background-color: #9e9e9e;
-  -webkit-transition: color 0s ease-in;
-  transition: color 0s ease-in;
-}
-
-.bookmarks.dark a:hover {
-  color: black;
-  background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
-  -webkit-transition: color 0s ease-in;
-  transition: color 0s ease-in;
 }
 
 .bookmarks.light div {
