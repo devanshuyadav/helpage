@@ -236,11 +236,19 @@ img:hover {
 }
 
 .bookmarks.light a {
-  color: black;
+  color: rgba(60, 60, 60, 0.75);
+}
+
+.bookmarks.light a:hover {
+  color: #000;
 }
 
 .bookmarks.dark a {
-  color: white;
+  color: rgba(196, 196, 196, 0.75);
+}
+
+.bookmarks.dark a:hover {
+  color: #fff;
 }
 
 .bookmarks.light div {
@@ -254,8 +262,8 @@ img:hover {
 .dropdown .bookmarks {
   /* display: block; */
   /* for dropdown on hover */
-  top: 110%;
-  left: -150px;
+  top: 120%;
+  left: -10px;
 }
 
 /* footer */
