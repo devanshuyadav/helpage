@@ -35,7 +35,7 @@ input[type="checkbox"] {
 
 .dark,
 .dark.navbar a {
-  background-color: #1f2329;
+  background-color: #181818;
   color: #fff;
 }
 
@@ -48,9 +48,9 @@ input[type="checkbox"] {
 }
 
 .dark_neo {
-  background: #1f2329;
-  -webkit-box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
-  box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
+  background: #181818;
+  -webkit-box-shadow: 8px 8px 21px #141414, -8px -8px 21px #1c1c1c;
+  box-shadow: 8px 8px 21px #141414, -8px -8px 21px #1c1c1c;
 }
 
 .container-fluid {
