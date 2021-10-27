@@ -25,13 +25,53 @@ Now everytime you open your browser, you'll have all your selected websites at o
 
 
 # 👷‍♂️**How to Personalize Helpage?**
-1. [Fork]() the Repository.
-2. Clone the Repository to your Local Environment.
-3. Search for `<WELCOME MESSAGE>` in `/index.html` and Update Your Name there.
 
-**EDIT :** *"It's not required anymore, the feature is shifted to user side. You'll be asked for username and your default theme at startup only once. And you can edit that later from homepage only."*
+1. Fork the Repository.
+
+2. Clone the Repository to your Local Environment.
+
+3. Once the Repository has been cloned you have to open it in Git bash.
+
+4. Create a branch specific to the issue you are working on.
+   ```shell
+   git checkout -b your-branch-name
+   ```
+   For clarity, name
+   your branch `update-xxx` or `fix-xxx`. The `xxx` is a short description of the changes you're making. Examples include `update-readme` or `fix-typo-on-contribution-md`.
+
+5. Open up the project in your favorite text editor, select the file you want to contribute to, and make your changes.
+
+6. Add your modified files to Git.
+   ```shell
+   git add path/to/filename.ext
+   ```
+   You can also add all unstaged files using:
+   ```shell
+   git add .
+   ```
+
+   **Note:** using a `git add .` will automatically add all files. You can do a `git status` to see your changes, but do it **before** `git add`.
+
+7. Commit your changes using a descriptive commit message.
+   ```shell
+   git commit -m "Brief Description of Commit"
+   ```
+
+8. Verify that the origin is your own forked branch and not the main repository.
+   ```shell
+   git remote --verbose
+   ```
+
+9. Push your commits to your GitHub Fork:
+   ```shell
+   git push -u origin your-branch-name
+   ```
+
+10. Submit a pull request.
+Within GitHub, visit this main repository and you should see a banner suggesting that you make a pull request. While you're writing up the pull request, you can add `Closes #XXX` in the message body where `#XXX` is the issue number you're fixing. Therefore, an example would be `Closes #42` would close issue `#42`.
 <br>
 <br>
+
 
 ### Adding New Icon to the Page
 1. In Order to add a new icon to Helpage, you'll need the following beforehand:
