@@ -1,5 +1,5 @@
 # Helpage
-One-Stop solution for clumsy bookmarks. Helpage lets you organize your custom bookmarks and most visited sites onto a basic HTML5 webpage.
+An awesome alternative to clumsy bookmarks. Helpage lets you organize your custom bookmarks and most visited sites onto a basic HTML5 webpage.
 
 ***Helpage*** is a Webpage Designed with the intention to cut down the need for any regular browser's favorites tab. Moreover, It has bookmarks just similar to a regular browser. 
 
